@@ -1,0 +1,876 @@
+{
+    "extName": {
+        "message": "新标签页",
+        "description": "扩展的名称"
+    },
+    "extDescription": {
+        "message": "MarkHub 是一个基于书签的新标签页应用程序，帮助您高效地组织和访问您的书签。",
+        "description": "扩展的描述"
+    },
+    "welcomeMessage": {
+        "message": "早上好",
+        "description": "显示给用户的欢迎消息"
+    },
+    "searchPlaceholder": {
+        "message": "按 Enter 键搜索，或按 Cmd/Ctrl + Enter 键搜索所有搜索引擎",
+        "description": "搜索输入框的占位文本"
+    },
+    "editDialogTitle": {
+        "message": "编辑快捷链接",
+        "description": "编辑对话框的标题"
+    },
+    "editBookmarkTitle": {
+        "message": "编辑书签",
+        "description": "编辑书签对话框的标题"
+    },
+    "editNameLabel": {
+        "message": "名称：",
+        "description": "编辑对话框中名称输入框的标签"
+    },
+    "editUrlLabel": {
+        "message": "网址：",
+        "description": "编辑对话框中URL输入框的标签"
+    },
+    "folderLabel": {
+        "message": "文件夹：",
+        "description": "编辑对话框中文件夹选择框的标签"
+    },
+    "selectFolder": {
+        "message": "请选择文件夹",
+        "description": "文件夹选择框的默认选项"
+    },
+    "saveButton": {
+        "message": "保存",
+        "description": "保存按钮的文本"
+    },
+    "cancelButton": {
+        "message": "取消",
+        "description": "取消按钮的文本"
+    },
+    "confirmDeleteMessage": {
+        "message": "您确定要删除 \"$1\" 吗？",
+        "description": "确认删除项目的消息"
+    },
+    "confirmDeleteButton": {
+        "message": "删除",
+        "description": "确认删除按钮的文本"
+    },
+    "openInNewTab": {
+        "message": "在新标签页中打开",
+        "description": "在新标签页中打开链接的选项"
+    },
+    "openInNewWindow": {
+        "message": "在新窗口中打开",
+        "description": "在新窗口中打开链接的上下文菜单项"
+    },
+    "openInIncognito": {
+        "message": "在无痕窗口中打开",
+        "description": "在无痕窗口中打开链接的上下文菜单项"
+    },
+    "editQuickLink": {
+        "message": "编辑",
+        "description": "编辑快捷链接的上下文菜单项"
+    },
+    "deleteQuickLink": {
+        "message": "删除",
+        "description": "删除快捷链接的上下文菜单项"
+    },
+    "copyLink": {
+        "message": "复制链接",
+        "description": "复制链接的上下文菜单项"
+    },
+    "createQRCode": {
+        "message": "创建二维码",
+        "description": "创建二维码的上下文菜单项"
+    },
+    "extensionsLinkTitle": {
+        "message": "扩展",
+        "description": "扩展链接标题"
+    },
+    "settingsLinkTitle": {
+        "message": "设置",
+        "description": "设置链接标题"
+    },
+    "settingsTitle": {
+        "message": "设置",
+        "description": "设置标题"
+    },
+    "appearanceTab": {
+        "message": "外观",
+        "description": "外观设置标签"
+    },
+    "floatingBallTab": {
+        "message": "悬浮球",
+        "description": "悬浮球设置标签"
+    },
+    "languageTab": {
+        "message": "语言",
+        "description": "语言设置标签名"
+    },
+    "backgroundColorTitle": {
+        "message": "背景颜色",
+        "description": "背景颜色设置标题"
+    },
+    "floatingBallSettingsTitle": {
+        "message": "悬浮球设置",
+        "description": "悬浮球设置标题"
+    },
+    "floatingBallDescription": {
+        "message": "开启悬浮球后会在页面右上角显示一个可点击的悬浮图标，用于快速访问搜索引擎和书签。",
+        "description": "悬浮球功能描述"
+    },
+    "enableFloatingBall": {
+        "message": "启用悬浮球",
+        "description": "启用悬浮球选项"
+    },
+    "confirmDeleteBookmark": {
+        "message": "您确定要删除书签 \"$1\" 吗？",
+        "description": "确认删除书签的消息"
+    },
+    "rename": {
+        "message": "重命名",
+        "description": "重命名选项"
+    },
+    "delete": {
+        "message": "删除",
+        "description": "删除选项"
+    },
+    "setAsHomepage": {
+        "message": "设为主页",
+        "description": "将页面设为主页的选项"
+    },
+    "confirmDeleteFolder": {
+        "message": "您确定要删除文件夹 \"$1\" 吗？",
+        "description": "确认删除文件夹的消息"
+    },
+    "categoryDeleted": {
+        "message": "分类已删除",
+        "description": "分类删除后的通知消息"
+    },
+    "searchEngineIconNotFound": {
+        "message": "未找到搜索引擎图标",
+        "description": "未找到搜索引擎图标时的错误消息"
+    },
+    "folderDeleted": {
+        "message": "文件夹已删除：ID=$1，标题=$2",
+        "description": "文件夹删除时的日志消息"
+    },
+    "morningGreeting": {
+        "message": "早上好👋",
+        "description": "早上的问候语"
+    },
+    "afternoonGreeting": {
+        "message": "下午好👋",
+        "description": "下午的问候语"
+    },
+    "eveningGreeting": {
+        "message": "晚上好👋",
+        "description": "晚上的问候语"
+    },
+    "linkCopied": {
+        "message": "链接已复制到剪贴板",
+        "description": "复制链接成功时的 toast 提示"
+    },
+    "copyLinkFailed": {
+        "message": "复制链接失败",
+        "description": "复制链接失败时的 toast 提示"
+    },
+    "invalidBookmark": {
+        "message": "无效的书签或URL",
+        "description": "尝试复制无效书签时的 toast 提示"
+    },
+    "download": {
+        "message": "下载",
+        "description": "下载按钮的文本"
+    },
+    "copied": {
+        "message": "已复制",
+        "description": "当链接被复制后显示的文本"
+    },
+    "confirmDeleteTitle": {
+        "message": "确认删除",
+        "description": "确认删除对话框的标题"
+    },
+    "scanQRCode": {
+        "message": "扫描二维码",
+        "description": "二维码模态窗口的标题"
+    },
+    "doubaoTab": {
+        "message": "豆包",
+        "description": "豆包搜索引擎标签"
+    },
+    "metasoTab": {
+        "message": "秘塔搜索",
+        "description": "秘塔搜索标签"
+    },
+    "renameFolderTitle": {
+        "message": "重命名文件夹",
+        "description": "重命名文件夹对话框的标题"
+    },
+    "nameLabel": {
+        "message": "名称",
+        "description": "名称标签"
+    },
+    "moreSearchSupportToast": {
+        "message": "更多搜索支持即将推出",
+        "description": "更多搜索支持提示"
+    },
+    "historyLinkTitle": {
+        "message": "历史记录",
+        "description": "历史记录链接标题"
+    },
+    "downloadsLinkTitle": {
+        "message": "下载",
+        "description": "下载链接标题"
+    },
+    "passwordsLinkTitle": {
+        "message": "密码",
+        "description": "密码链接标题"
+    },
+    "confirmDeleteQuickLinkMessage": {
+        "message": "您确定要删除快捷链接 \"$1\" 吗？，该链接将不会出现在快速链接列表中。",
+        "description": "确认删除快捷链接的消息"
+    },
+    "yearProgress": {
+        "message": "年进度",
+        "description": "年进度显示"
+    },
+    "searchTips": {
+        "message": "本次使用:",
+        "description": "搜索提示文字"
+    },
+    "baiduTab": {
+        "message": "百度",
+        "description": "百度搜索引擎标签"
+    },
+    "searchEngineUpdateTip": {
+        "message": "搜索引擎切换功能已更新",
+        "description": "搜索引擎切换功能提示"
+    },
+    "searchEngineUpdateDetail": {
+        "message": "点击搜索图标可以设置默认搜索引擎，支持自定义搜索引擎，标签栏用于临时切换当次搜索",
+        "description": "搜索引擎切换功能详细说明"
+    },
+    "googleLabel": {
+        "message": "谷歌",
+        "description": "Google 搜索引擎标签"
+    },
+    "bingLabel": {
+        "message": "必应",
+        "description": "Bing 搜索引擎标签"
+    },
+    "baiduLabel": {
+        "message": "百度",
+        "description": "百度搜索引擎标签"
+    },
+    "kimiLabel": {
+        "message": "Kimi",
+        "description": "Kimi 搜索引擎标签"
+    },
+    "doubaoLabel": {
+        "message": "豆包",
+        "description": "豆包搜索引擎标签"
+    },
+    "chatgptLabel": {
+        "message": "ChatGPT",
+        "description": "ChatGPT 搜索引擎标签"
+    },
+    "feloLabel": {
+        "message": "Felo",
+        "description": "Felo 搜索引擎标签"
+    },
+    "metasoLabel": {
+        "message": "秘塔",
+        "description": "秘塔搜索引擎标签"
+    },
+    "backgroundTitle": {
+        "message": "背景设置",
+        "description": "背景设置标题"
+    },
+    "resetWallpaper": {
+        "message": "恢复默认背景",
+        "description": "重置壁纸按钮文本"
+    },
+    "uploadWallpaper": {
+        "message": "上传壁纸",
+        "description": "上传壁纸按钮文本"
+    },
+    "wallpaperResetSuccess": {
+        "message": "背景已重置为默认",
+        "description": "重置壁纸成功提示"
+    },
+    "solidBackgroundTitle": {
+        "message": "纯色背景",
+        "description": "纯色背景设置标题"
+    },
+    "pleaseUploadImage": {
+        "message": "请上传图片文件",
+        "description": "提示用户上传图片文件"
+    },
+    "imageSizeExceeded": {
+        "message": "图片大小超过限制（最大10MB），请选择较小的图片",
+        "description": "图片大小超限提示"
+    },
+    "fileReadError": {
+        "message": "读取文件失败，请重试",
+        "description": "文件读取失败提示"
+    },
+    "lowResolutionWarning": {
+        "message": "图片分辨率过低，建议使用至少 $1 x $2 的图片以获得最佳效果",
+        "description": "图片分辨率过低警告"
+    },
+    "imageLoadError": {
+        "message": "图片加载失败，请尝试其他图片",
+        "description": "图片加载失败提示"
+    },
+    "storageError": {
+        "message": "存储空间不足，请清理后重试",
+        "description": "存储空间不足提示"
+    },
+    "wallpaperSetError": {
+        "message": "设置壁纸失败，请重试",
+        "description": "设置壁纸失败提示"
+    },
+    "wallpaperUploadError": {
+        "message": "上传壁纸失败，请重试"
+    },
+    "wallpapersUploadSuccess": {
+        "message": "壁纸上传成功"
+    },
+    "noValidImagesFound": {
+        "message": "未找到有效的图片文件"
+    },
+    "uploadedWallpaperBadge": {
+        "message": "本地图片",
+        "description": "用户上传的壁纸标识"
+    },
+    "aboutTab": {
+        "message": "关于",
+        "description": "关于选项卡"
+    },
+    "aboutTitle": {
+        "message": "关于 MarkHub",
+        "description": "关于 MarkHub 的标题"
+    },
+    "aboutDescription": {
+        "message": "MarkHub 是一款综合书签管理扩展，帮你高效整理与直达常用网页，让收藏更有序、访问更省心。",
+        "description": "关于 MarkHub 的描述"
+    },
+    "sourceCode": {
+        "message": "源代码",
+        "description": "源代码链接"
+    },
+    "contactUs": {
+        "message": "联系我们",
+        "description": "联系我们链接"
+    },
+    "version": {
+        "message": "版本 $1",
+        "description": "应用程序的版本号"
+    },
+    "officialWebsite": {
+        "message": "官方网站",
+        "description": "官方网站链接文本"
+    },
+    "feedback": {
+        "message": "邮箱",
+        "description": "反馈链接文本"
+    },
+    "settingsUpdateTip": {
+        "message": "你可以在这里设置背景颜色、壁纸、悬浮球、推荐网站、链接打开方式、清理失效书签...",
+        "description": "设置更新提示"
+    },
+    "deleteSuccess": {
+        "message": "删除成功",
+        "description": "删除成功时的提示消息"
+    },
+    "quickLinksTab": {
+        "message": "网站推荐"
+    },
+    "quickLinksSettings": {
+        "message": "网站推荐设置"
+    },
+    "quickLinksDescription": {
+        "message": "在搜索框下方显示最常访问的网站，方便快速访问"
+    },
+    "enableQuickLinks": {
+        "message": "启用网站推荐"
+    },
+    "namePrompt": {
+        "message": "我该怎么称呼你：",
+        "description": "询问用户名字时的提示消息"
+    },
+    "openAllBookmarks": {
+        "message": "打开所有书签",
+        "description": "打开文件夹中的所有书签"
+    },
+    "newFeatureTitle": {
+        "message": "新功能提示",
+        "description": "新功能提示的标题"
+    },
+    "floatingBallClickTip": {
+        "message": "点击",
+        "description": "悬浮球点击提示"
+    },
+    "floatingBallClickDesc": {
+        "message": "打开快速搜索",
+        "description": "悬浮球点击功能描述"
+    },
+    "floatingBallAltClickTip": {
+        "message": "Alt + 点击",
+        "description": "悬浮球 Alt+点击提示"
+    },
+    "floatingBallAltClickDesc": {
+        "message": "打开侧边栏",
+        "description": "悬浮球 Alt+点击功能描述"
+    },
+    "floatingBallShortcutTip": {
+        "message": "Alt/Command + B",
+        "description": "悬浮球快捷键提示"
+    },
+    "floatingBallShortcutDesc": {
+        "message": "快捷键打开侧边栏",
+        "description": "悬浮球快捷键功能描述"
+    },
+    "doNotShowAgain": {
+        "message": "不再显示此提示",
+        "description": "不再显示提示的按钮文本"
+    },
+    "linkOpeningTab": {
+        "message": "链接打开方式",
+        "description": "链接打开方式设置标签"
+    },
+    "linkOpeningSettingsTitle": {
+        "message": "链接打开方式设置",
+        "description": "链接打开方式设置标题"
+    },
+    "linkOpeningDescription": {
+        "message": "设置在主页面中点击书签和快捷链接时的打开方式。",
+        "description": "链接打开方式设置说明"
+    },
+    "sidePanelLinkOpeningTitle": {
+        "message": "侧边栏链接打开方式",
+        "description": "侧边栏链接打开方式设置标题"
+    },
+    "sidePanelLinkOpeningDescription": {
+        "message": "设置在侧边栏中点击书签和快捷链接时的打开方式",
+        "description": "侧边栏链接打开方式设置说明"
+    },
+    "sidePanelOpenInNewTab": {
+        "message": "在新标签页中打开",
+        "description": "在侧边栏中点击链接时在新标签页中打开的选项"
+    },
+    "sidePanelOpenInSidepanel": {
+        "message": "在侧边栏中打开",
+        "description": "在侧边栏内部打开链接的选项"
+    },
+    "sidebarFeaturesFeature": {
+        "message": "新增两项功能：\n1. 快捷侧边栏：\n在任意网页按下 Alt/Command + B，即可打开侧边栏，快速访问书签和搜索功能。\n\n2. 链接打开方式：\n在设置中可自定义书签和快捷链接的打开方式，选择是否在新标签页中打开。",
+        "description": "侧边栏搜索和链接打开方式的统一提示信息"
+    },
+    "layoutTab": {
+        "message": "布局设置",
+        "description": "布局设置选项卡名称"
+    },
+    "layoutSettingsTitle": {
+        "message": "布局设置",
+        "description": "布局设置标题"
+    },
+    "layoutSettingsDescription": {
+        "message": "自定义界面元素的显示方式",
+        "description": "布局设置描述"
+    },
+    "bookmarkManagementTab": {
+        "message": "书签管理",
+        "description": "书签管理选项卡名称"
+    },
+    "bookmarkManagementTitle": {
+        "message": "书签管理",
+        "description": "书签管理标题"
+    },
+    "bookmarkManagementDescription": {
+        "message": "自定义书签和链接的显示方式和行为",
+        "description": "书签管理描述"
+    },
+    "bookmarkWidthTitle": {
+        "message": "书签宽度设置",
+        "description": "书签宽度设置的标题"
+    },
+    "previewText": {
+        "message": "每行书签按钮数量：",
+        "description": "书签宽度预览效果的说明文本"
+    },
+    "bookmarkHeightTitle": {
+        "message": "书签卡片高度",
+        "description": "书签卡片高度设置的标题"
+    },
+    "heightPreviewText": {
+        "message": "调整书签卡片的高度",
+        "description": "书签卡片高度设置的预览文本"
+    },
+    "addSearchEngine": {
+        "message": "添加",
+        "description": "添加搜索引擎按钮的文本"
+    },
+    "searchEnginesTitle": {
+        "message": "搜索引擎设置",
+        "description": "搜索引擎设置标题"
+    },
+    "aiSearchEnginesTitle": {
+        "message": "AI 搜索",
+        "description": "AI搜索引擎分类标题"
+    },
+    "generalSearchEnginesTitle": {
+        "message": "通用搜索",
+        "description": "通用搜索引擎分类标题"
+    },
+    "socialSearchEnginesTitle": {
+        "message": "社交媒体",
+        "description": "社交媒体搜索分类标题"
+    },
+    "customSearchEnginesTitle": {
+        "message": "自定义搜索引擎",
+        "description": "自定义搜索引擎分类标题"
+    },
+    "searchEngineNamePlaceholder": {
+        "message": "搜索引擎名称",
+        "description": "搜索引擎名称输入框占位符"
+    },
+    "searchEngineUrlPlaceholder": {
+        "message": "搜索 URL (使用 %s 作为搜索词占位符)",
+        "description": "搜索引擎URL输入框占位符"
+    },
+    "searchEngineIconPlaceholder": {
+        "message": "图标 URL（可选，留空将自动获取）",
+        "description": "搜索引擎图标输入框占位符"
+    },
+    "addSearchEngineButton": {
+        "message": "添加",
+        "description": "添加搜索引擎按钮文本"
+    },
+    "searchEngineAddSuccess": {
+        "message": "搜索引擎添加成功",
+        "description": "搜索引擎添加成功提示"
+    },
+    "searchEngineAddError": {
+        "message": "添加搜索引擎失败，请重试",
+        "description": "搜索引擎添加失败提示"
+    },
+    "searchEngineDeleteConfirm": {
+        "message": "确定要删除此搜索引擎吗？",
+        "description": "删除搜索引擎确认提示"
+    },
+    "searchEngineNameRequired": {
+        "message": "请输入搜索引擎名称",
+        "description": "搜索引擎名称必填提示"
+    },
+    "searchEngineUrlRequired": {
+        "message": "请输入搜索引擎URL",
+        "description": "搜索引擎URL必填提示"
+    },
+    "searchEngineUrlInvalid": {
+        "message": "请输入有效的URL，需包含 %s 作为搜索词占位符",
+        "description": "搜索引擎URL格式无效提示"
+    },
+    "semanticscholarLabel": {
+        "message": "Semantic",
+        "description": "Semantic Scholar 搜索引擎标签"
+    },
+    "deepseekLabel": {
+        "message": "Deepseek",
+        "description": "Deepseek 搜索引擎标签"
+    },
+    "yahooLabel": {
+        "message": "雅虎",
+        "description": "Yahoo 搜索引擎标签"
+    },
+    "duckduckgoLabel": {
+        "message": "DuckDuckGo",
+        "description": "DuckDuckGo 搜索引擎标签"
+    },
+    "yandexLabel": {
+        "message": "Yandex",
+        "description": "Yandex 搜索引擎标签"
+    },
+    "xiaohongshuLabel": {
+        "message": "小红书",
+        "description": "小红书搜索引擎标签"
+    },
+    "jikeLabel": {
+        "message": "即刻",
+        "description": "即刻搜索引擎标签"
+    },
+    "zhihuLabel": {
+        "message": "知乎",
+        "description": "知乎搜索引擎标签"
+    },
+    "doubanLabel": {
+        "message": "豆瓣",
+        "description": "豆瓣搜索引擎标签"
+    },
+    "bilibiliLabel": {
+        "message": "哔哩哔哩",
+        "description": "哔哩哔哩搜索引擎标签"
+    },
+    "githubLabel": {
+        "message": "GitHub",
+        "description": "GitHub 搜索引擎标签"
+    },
+    "perplexityLabel": {
+        "message": "Perplexity",
+        "description": "Perplexity 搜索引擎标签"
+    },
+    "claudeLabel": {
+        "message": "Claude",
+        "description": "Claude 搜索引擎标签"
+    },
+    "deleteFolderError": {
+        "message": "删除文件夹失败，请重试",
+        "description": "删除文件夹失败时的错误消息"
+    },
+    "searchEngineUpdateFeature": {
+        "message": "搜索引擎切换功能已更新：\n1. 点击搜索图标设置默认搜索引擎\n2. 支持自定义搜索引擎\n3. 使用标签栏进行临时切换",
+        "description": "搜索引擎切换功能更新详细说明"
+    },
+    "themeTitle": {
+        "message": "主题设置",
+        "description": "主题设置标题"
+    },
+    "lightTheme": {
+        "message": "浅色",
+        "description": "浅色主题选项"
+    },
+    "darkTheme": {
+        "message": "深色",
+        "description": "深色主题选项"
+    },
+    "autoTheme": {
+        "message": "跟随系统",
+        "description": "跟随系统主题选项"
+    },
+    "addToDefaultFolders": {
+        "message": "固定到主页"
+    },
+    "removeFromDefaultFolders": {
+        "message": "取消固定"
+    },
+    "addedToDefaultFolders": {
+        "message": "已将 $1 固定到主页"
+    },
+    "removedFromDefaultFolders": {
+        "message": "已取消固定 $1"
+    },
+    "maxDefaultFoldersReached": {
+        "message": "最多只能固定8个文件夹"
+    },
+    "interfaceElementsTitle": {
+        "message": "界面元素显示",
+        "description": "界面元素显示设置标题"
+    },
+    "showSearchBox": {
+        "message": "显示搜索框",
+        "description": "显示搜索框选项"
+    },
+    "showWelcomeMessage": {
+        "message": "显示欢迎语",
+        "description": "显示欢迎语选项"
+    },
+    "showFooter": {
+        "message": "显示页脚",
+        "description": "显示页脚选项"
+    },
+    "showBookmarkCount": {
+        "message": "显示书签数量",
+        "description": "显示文件夹内的书签数量选项"
+    },
+    "showFolderIcons": {
+        "message": "显示目录树图标",
+        "description": "显示左侧目录树文件夹图标选项"
+    },
+    "quickAccessLinksTitle": {
+        "message": "快捷访问链接",
+        "description": "快捷访问链接设置标题"
+    },
+    "showHistoryLink": {
+        "message": "显示历史记录",
+        "description": "显示历史记录选项"
+    },
+    "showDownloadsLink": {
+        "message": "显示下载记录",
+        "description": "显示下载记录选项"
+    },
+    "showPasswordsLink": {
+        "message": "显示密码管理",
+        "description": "显示密码管理选项"
+    },
+    "showExtensionsLink": {
+        "message": "显示扩展管理",
+        "description": "显示扩展管理选项"
+    },
+    "showBookmarksLink": {
+        "message": "显示书签管理",
+        "description": "显示书签管理选项"
+    },
+    "bookmarksLinkTitle": {
+        "message": "书签管理",
+        "description": "书签管理链接标题"
+    },
+    "searchTab": {
+        "message": "搜索设置",
+        "description": "搜索设置标签名称"
+    },
+    "searchSettingsTitle": {
+        "message": "搜索设置",
+        "description": "搜索设置页面标题"
+    },
+    "searchSettingsDescription": {
+        "message": "自定义搜索建议的显示内容和行为",
+        "description": "搜索设置页面描述"
+    },
+    "searchSuggestionsTitle": {
+        "message": "搜索建议设置",
+        "description": "搜索建议设置标题"
+    },
+    "showHistorySuggestions": {
+        "message": "显示历史记录建议",
+        "description": "显示历史记录建议选项"
+    },
+    "showBookmarkSuggestions": {
+        "message": "显示书签建议",
+        "description": "显示书签建议选项"
+    },
+    "containerWidthTitle": {
+        "message": "书签容器宽度"
+    },
+    "containerWidthDescription": {
+        "message": "调整书签容器在页面中的宽度比例"
+    },
+    "bookmarksPerRow": {
+        "message": "$1 个/行",
+        "description": "每行显示的书签数量"
+    },
+    "customTabFeature": {
+        "message": "新增自定义标签页功能：\n1. 现在您可以自定义主页显示的内容，在设置中的「布局设置」选项卡下\n2. 可以选择隐藏或显示搜索框、欢迎语和页脚\n3. 可以自定义快捷访问链接的显示\n4. 调整书签容器宽度，获得最适合您的布局\n5. 在「搜索设置」中可以选择是否显示历史记录和书签建议",
+        "description": "自定义标签页功能的提示信息"
+    },
+    "grokLabel": {
+        "message": "Grok",
+        "description": "Grok 搜索引擎标签"
+    },
+    "searchBoxDisplayTitle": {
+        "message": "搜索框显示",
+        "description": "搜索框显示设置标题"
+    },
+    "shortcutsTab": {
+        "message": "快捷键",
+        "description": "Shortcuts tab name in settings"
+    },
+    "wheelSwitchingTab": {
+        "message": "文件夹切换",
+        "description": "Wheel switching tab name in settings"
+    },
+    "wheelSwitchingSettingsTitle": {
+        "message": "滚轮切换设置",
+        "description": "Title for wheel switching settings"
+    },
+    "wheelSwitchingDescription": {
+        "message": "开启滚轮切换功能后，在主页非书签列表区域滚动鼠标滚轮即可快速切换固定的文件夹",
+        "description": "Description for wheel switching settings"
+    },
+    "enableWheelSwitching": {
+        "message": "启用滚轮切换",
+        "description": "Option to enable wheel switching feature"
+    },
+    "wechatGroup": {
+        "message": "微信群",
+        "description": "微信群名称"
+    },
+    "feedbacks": {
+        "message": "反馈建议",
+        "description": "反馈建议链接文本"
+    },
+    "shortcutsSettingsTitle": {
+        "message": "快捷键设置",
+        "description": "快捷键设置标题"
+    },
+    "shortcutsSettingsDescription": {
+        "message": "自定义快捷键设置",
+        "description": "快捷键设置描述"
+    },
+    "sidebarShortcutName": {
+        "message": "侧边栏快捷键",
+        "description": "侧边栏快捷键名称"
+    },
+    "configureShortcuts": {
+        "message": "配置快捷键",
+        "description": "配置快捷键按钮文本"
+    },
+    "shortcutValue": {
+        "message": "默认",
+        "description": "默认快捷键值"
+    },
+    "shortcutsFeature": {
+        "message": "新增功能：\n1. 侧边栏快捷键自定义：现在您可以在Chrome扩展快捷键设置中自定义打开侧边栏的快捷键\n2. 在设置 > 快捷键中可以快速跳转到Chrome快捷键设置页面\n3. 双向控制：按下相同的快捷键可以打开或关闭侧边栏，更加便捷\n\n自定义标签页功能：\n1. 现在您可以自定义主页显示的内容，在设置中的「布局设置」选项卡下\n2. 可以选择隐藏或显示搜索框、欢迎语和页脚\n3. 可以自定义快捷访问链接的显示\n4. 调整书签容器宽度，获得最适合您的布局\n5. 在「搜索设置」中可以选择是否显示历史记录和书签建议",
+        "description": "快捷键自定义功能的提示信息"
+    },
+    "searchResultsOpeningTitle": {
+        "message": "搜索结果打开方式",
+        "description": "搜索结果打开方式设置标题"
+    },
+    "openSearchInNewTab": {
+        "message": "在新标签页中打开搜索结果",
+        "description": "在新标签页中打开搜索结果选项"
+    },
+    "searchSuggestionsFeature": {
+        "message": "1.121版本更新：\n1. 侧边栏设置改为弹窗设置，优化展示效果\n2. 外观设置修复深色模式下纯色背景颜色适配\n3. 添加透明度设置，支持修改书签栏、展示区域等背景色的透明度。\n4. 修复必应壁纸未加载时异常报错，添加国际版必应壁纸并支持切换\n5. 添加壁纸模糊设置，支持调整背景壁纸的模糊程度\n6. 调整布局设置选项，添加书签管理快捷访问链接，添加目录树图标显示开关控制\n7. 修复书签宽度设置大于75%不生效问题\n8.  重新设计书签显示布局和逻辑，添加目录中书签数量统计\n9. 添加书签快速移动修改所属目录功能\n10. 优化书签卡片展示，添加浮窗显示完整名称和信息\n11. 热门推荐添加右上角快速删除按钮和功能\n12. 拆分左侧目录树的选中和折叠按钮，添加选中设置记忆",
+        "description": "1.121版本更新内容的提示信息"
+    },
+    "bookmarkCardHeightTitle": {
+        "message": "书签卡片高度",
+        "description": "书签卡片高度设置标题"
+    },
+    "bookmarkCardHeightValue": {
+        "message": "$1 像素",
+        "description": "书签卡片高度值"
+    },
+    "presetWallpaperTitle": {
+        "message": "预设壁纸",
+        "description": "预设壁纸设置标题"
+    },
+    "bingWallpapersTitle": {
+        "message": "必应壁纸",
+        "description": "必应壁纸标题"
+    },
+    "transparencyTitle": {
+        "message": "透明度设置",
+        "description": "透明度设置的标题"
+    },
+    "transparencyDescription": {
+        "message": "修改书签栏、展示区域等背景色的透明度",
+        "description": "透明度设置的描述"
+    },
+    "wallpaperBlurTitle": {
+        "message": "壁纸模糊设置",
+        "description": "壁纸模糊设置的标题"
+    },
+    "wallpaperBlurDescription": {
+        "message": "调整背景壁纸的模糊程度",
+        "description": "壁纸模糊设置的描述"
+    },
+    "bingWallpapersLoadError": {
+        "message": "必应壁纸暂时无法加载",
+        "description": "必应壁纸加载失败的标题"
+    },
+    "bingWallpapersLoadErrorDesc": {
+        "message": "可能是网络连接问题，请稍后重试或选择其他壁纸",
+        "description": "必应壁纸加载失败的描述"
+    },
+    "bingRegionChina": {
+        "message": "国内版",
+        "description": "必应壁纸国内版选项"
+    },
+    "bingRegionGlobal": {
+        "message": "国际版",
+        "description": "必应壁纸国际版选项"
+    }
+}

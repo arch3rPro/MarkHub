@@ -1,0 +1,824 @@
+{
+    "extName": {
+        "message": "Neue Registerkarte",
+        "description": "Der Name der Erweiterung"
+    },
+    "extDescription": {
+        "message": "Eine Neue-Tab-Seite zum einfachen Organisieren und Zugreifen auf Ihre Lesezeichen.",
+        "description": "Die Beschreibung der Erweiterung"
+    },
+    "welcomeMessage": {
+        "message": "Guten Morgen",
+        "description": "Willkommensnachricht, die dem Benutzer angezeigt wird"
+    },
+    "searchPlaceholder": {
+        "message": "Drücken Sie Enter, um zu suchen, oder Cmd/Ctrl + Enter, um alle Suchmaschinen zu durchsuchen",
+        "description": "Platzhaltertext für das Suchfeld"
+    },
+    "editDialogTitle": {
+        "message": "Schnelllink bearbeiten",
+        "description": "Titel für das Bearbeitungsdialogfeld"
+    },
+    "editNameLabel": {
+        "message": "Name:",
+        "description": "Beschriftung für das Namenseingabefeld im Bearbeitungsdialogfeld"
+    },
+    "editUrlLabel": {
+        "message": "URL:",
+        "description": "Beschriftung für das URL-Eingabefeld im Bearbeitungsdialogfeld"
+    },
+    "folderLabel": {
+        "message": "Ordner:",
+        "description": "Beschriftung für die Ordnerauswahl im Bearbeitungsdialogfeld"
+    },
+    "selectFolder": {
+        "message": "Ordner auswählen",
+        "description": "Standardoption für die Ordnerauswahl"
+    },
+    "saveButton": {
+        "message": "Speichern",
+        "description": "Text für die Schaltfläche zum Speichern"
+    },
+    "cancelButton": {
+        "message": "Abbrechen",
+        "description": "Text für die Schaltfläche zum Abbrechen"
+    },
+    "confirmDeleteMessage": {
+        "message": "Sind Sie sicher, dass Sie \"$1\" löschen möchten?",
+        "description": "Bestätigungsnachricht zum Löschen eines Elements"
+    },
+    "confirmDeleteButton": {
+        "message": "Löschen",
+        "description": "Text für die Schaltfläche zur Bestätigung der Löschung"
+    },
+    "openInNewTab": {
+        "message": "In neuem Tab öffnen",
+        "description": "Option zum Öffnen von Links in neuem Tab"
+    },
+    "openInNewWindow": {
+        "message": "In neuem Fenster öffnen",
+        "description": "Kontextmenüelement zum Öffnen des Links in einem neuen Fenster"
+    },
+    "openInIncognito": {
+        "message": "In Inkognito-Fenster öffnen",
+        "description": "Kontextmenüelement zum Öffnen des Links in einem Inkognito-Fenster"
+    },
+    "editQuickLink": {
+        "message": "Bearbeiten",
+        "description": "Kontextmenüelement zum Bearbeiten des Schnelllinks"
+    },
+    "deleteQuickLink": {
+        "message": "Löschen",
+        "description": "Kontextmenüelement zum Löschen des Schnelllinks"
+    },
+    "copyLink": {
+        "message": "Link kopieren",
+        "description": "Kontextmenüelement zum Kopieren des Links"
+    },
+    "createQRCode": {
+        "message": "QR-Code erstellen",
+        "description": "Kontextmenüelement zum Erstellen eines QR-Codes"
+    },
+    "confirmDeleteBookmark": {
+        "message": "Sind Sie sicher, dass Sie das Lesezeichen \"$1\" löschen möchten?",
+        "description": "Bestätigungsnachricht zum Löschen eines Lesezeichens"
+    },
+    "rename": {
+        "message": "Umbenennen",
+        "description": "Option zum Umbenennen eines Elements"
+    },
+    "delete": {
+        "message": "Löschen",
+        "description": "Option zum Löschen eines Elements"
+    },
+    "setAsHomepage": {
+        "message": "Als Startseite festlegen",
+        "description": "Option zum Festlegen einer Seite als Startseite"
+    },
+    "confirmDeleteFolder": {
+        "message": "Sind Sie sicher, dass Sie den Ordner \"$1\" löschen möchten?",
+        "description": "Bestätigungsnachricht zum Löschen eines Ordners"
+    },
+    "categoryDeleted": {
+        "message": "Kategorie gelöscht",
+        "description": "Benachrichtigungsnachricht, wenn eine Kategorie gelöscht wird"
+    },
+    "searchEngineIconNotFound": {
+        "message": "Suchmaschinen-Symbol nicht gefunden",
+        "description": "Fehlermeldung, wenn das Suchmaschinen-Symbol nicht gefunden wird"
+    },
+    "folderDeleted": {
+        "message": "Ordner gelöscht: ID=$1, Titel=$2",
+        "description": "Protokollnachricht, wenn ein Ordner gelöscht wird"
+    },
+    "morningGreeting": {
+        "message": "Guten Morgen👋",
+        "description": "Morgengruß"
+    },
+    "afternoonGreeting": {
+        "message": "Guten Nachmittag👋",
+        "description": "Nachmittagsgruß"
+    },
+    "eveningGreeting": {
+        "message": "Guten Abend👋",
+        "description": "Abendgruß"
+    },
+    "linkCopied": {
+        "message": "Link in die Zwischenablage kopiert",
+        "description": "Toast-Nachricht, wenn ein Link erfolgreich kopiert wird"
+    },
+    "copyLinkFailed": {
+        "message": "Link konnte nicht kopiert werden",
+        "description": "Toast-Nachricht, wenn das Kopieren eines Links fehlschlägt"
+    },
+    "invalidBookmark": {
+        "message": "Ungültiges Lesezeichen oder URL",
+        "description": "Toast-Nachricht, wenn versucht wird, ein ungültiges Lesezeichen zu kopieren"
+    },
+    "download": {
+        "message": "Herunterladen",
+        "description": "Text für die Schaltfläche zum Herunterladen"
+    },
+    "copied": {
+        "message": "Kopiert",
+        "description": "Text, der nach dem Kopieren eines Links angezeigt wird"
+    },
+    "confirmDeleteTitle": {
+        "message": "Löschen bestätigen",
+        "description": "Titel für das Bestätigungsdialogfeld zum Löschen"
+    },
+    "scanQRCode": {
+        "message": "QR-Code scannen",
+        "description": "Titel für das QR-Code-Modalfenster"
+    },
+    "renameFolderTitle": {
+        "message": "Ordner umbenennen",
+        "description": "Titel für das Dialogfeld zum Umbenennen des Ordners"
+    },
+    "doubaoTab": {
+        "message": "Doubao",
+        "description": "Doubao-Suchmaschinen-Tab"
+    },
+    "metasoTab": {
+        "message": "Metaso",
+        "description": "Metaso-Suchmaschinen-Tab"
+    },
+    "nameLabel": {
+        "message": "Name",
+        "description": "Namensbeschriftung"
+    },
+    "moreSearchSupportToast": {
+        "message": "Mehr Suchunterstützung kommt bald",
+        "description": "Toast-Nachricht für mehr Suchunterstützung"
+    },
+    "settingsTitle": {
+        "message": "Einstellungen",
+        "description": "Titel der Einstellungen"
+    },
+    "appearanceTab": {
+        "message": "Aussehen",
+        "description": "Tab für die Erscheinungseinstellungen"
+    },
+    "floatingBallTab": {
+        "message": "Schwebender Ball",
+        "description": "Tab für die Einstellungen des schwebenden Balls"
+    },
+    "backgroundColorTitle": {
+        "message": "Hintergrundfarbe",
+        "description": "Titel für die Einstellungen der Hintergrundfarbe"
+    },
+    "floatingBallSettingsTitle": {
+        "message": "Einstellungen des schwebenden Balls",
+        "description": "Titel für die Einstellungen des schwebenden Balls"
+    },
+    "floatingBallDescription": {
+        "message": "Wenn aktiviert, erscheint ein anklickbares schwebendes Symbol in der oberen rechten Ecke der Seite für den schnellen Zugriff auf Suchmaschinen und Lesezeichen.",
+        "description": "Beschreibung der Funktion des schwebenden Balls"
+    },
+    "enableFloatingBall": {
+        "message": "Schwebenden Ball aktivieren",
+        "description": "Option zum Aktivieren des schwebenden Balls"
+    },
+    "historyLinkTitle": {
+        "message": "Verlauf",
+        "description": "Titel des Verlaufslinks"
+    },
+    "downloadsLinkTitle": {
+        "message": "Downloads",
+        "description": "Titel des Download-Links"
+    },
+    "passwordsLinkTitle": {
+        "message": "Passwörter",
+        "description": "Titel des Passwort-Links"
+    },
+    "extensionsLinkTitle": {
+        "message": "Erweiterungen",
+        "description": "Titel des Erweiterungs-Links"
+    },
+    "settingsLinkTitle": {
+        "message": "Einstellungen",
+        "description": "Titel des Einstellungs-Links"
+    },
+    "confirmDeleteQuickLinkMessage": {
+        "message": "Sind Sie sicher, dass Sie den Schnelllink \"$1\" löschen möchten? Dieser Link wird nicht mehr in der Liste der Schnelllinks angezeigt.",
+        "description": "Bestätigungsnachricht zum Löschen eines Schnelllinks"
+    },
+    "yearProgress": {
+        "message": "Jahresfortschritt",
+        "description": "Jahresfortschritt Anzeige"
+    },
+    "searchTips": {
+        "message": "Diesmal verwenden:",
+        "description": "Suchtipps Text"
+    },
+    "baiduTab": {
+        "message": "Baidu",
+        "description": "Baidu-Suchmaschinen-Tab"
+    },
+    "searchEngineUpdateTip": {
+        "message": "Die Suchmaschinen-Wechselfunktion wurde aktualisiert",
+        "description": "Hinweis zur Aktualisierung der Suchmaschinen-Funktion"
+    },
+    "searchEngineUpdateDetail": {
+        "message": "Klicken Sie auf das Suchsymbol, um die Standard-Suchmaschine festzulegen, unterstützt benutzerdefinierte Suchmaschinen, verwenden Sie die Tab-Leiste für temporäres Umschalten",
+        "description": "Details zur Suchmaschinen-Wechsel-Funktion"
+    },
+    "googleLabel": {
+        "message": "Google",
+        "description": "Google Suchmaschinen-Label"
+    },
+    "bingLabel": {
+        "message": "Bing",
+        "description": "Bing Suchmaschinen-Label"
+    },
+    "baiduLabel": {
+        "message": "Baidu",
+        "description": "Baidu Suchmaschinen-Label"
+    },
+    "kimiLabel": {
+        "message": "Kimi",
+        "description": "Kimi Suchmaschinen-Label"
+    },
+    "doubaoLabel": {
+        "message": "Doubao",
+        "description": "Doubao Suchmaschinen-Label"
+    },
+    "chatgptLabel": {
+        "message": "ChatGPT",
+        "description": "ChatGPT Suchmaschinen-Label"
+    },
+    "feloLabel": {
+        "message": "Felo",
+        "description": "Felo Suchmaschinen-Label"
+    },
+    "metasoLabel": {
+        "message": "Metaso",
+        "description": "Metaso Suchmaschinen-Label"
+    },
+    "backgroundTitle": {
+        "message": "Hintergrundeinstellungen",
+        "description": "Titel der Hintergrundeinstellungen"
+    },
+    "resetWallpaper": {
+        "message": "Hintergrund zurücksetzen",
+        "description": "Text für die Schaltfläche zum Zurücksetzen des Hintergrunds"
+    },
+    "uploadWallpaper": {
+        "message": "Hintergrund hochladen",
+        "description": "Text für die Schaltfläche zum Hochladen des Hintergrunds"
+    },
+    "wallpaperResetSuccess": {
+        "message": "Hintergrund auf Standard zurückgesetzt",
+        "description": "Erfolgsmeldung beim Zurücksetzen des Hintergrunds"
+    },
+    "solidBackgroundTitle": {
+        "message": "Einfarbiger Hintergrund",
+        "description": "Titel für die Einstellungen des einfarbigen Hintergrunds"
+    },
+    "wallpaperTitle": {
+        "message": "Hintergrundbild",
+        "description": "Titel für die Einstellungen des Hintergrundbilds"
+    },
+    "uploadedWallpaperBadge": {
+        "message": "Lokal",
+        "description": "Kennzeichentext für vom Benutzer hochgeladene Hintergrundbilder"
+    },
+    "pleaseUploadImage": {
+        "message": "Bitte laden Sie eine Bilddatei hoch",
+        "description": "Aufforderung zum Hochladen einer Bilddatei"
+    },
+    "imageSizeExceeded": {
+        "message": "Bildgröße überschreitet das Limit (max. 10MB), bitte wählen Sie ein kleineres Bild",
+        "description": "Warnung bei überschrittener Bildgröße"
+    },
+    "fileReadError": {
+        "message": "Datei konnte nicht gelesen werden, bitte versuchen Sie es erneut",
+        "description": "Dateilesefehlermeldung"
+    },
+    "lowResolutionWarning": {
+        "message": "Bildauflösung ist zu niedrig, empfohlen wird mindestens $1 x $2 für beste Ergebnisse",
+        "description": "Warnung bei niedriger Auflösung"
+    },
+    "imageLoadError": {
+        "message": "Bild konnte nicht geladen werden, bitte versuchen Sie es mit einem anderen",
+        "description": "Bildladefehler"
+    },
+    "storageError": {
+        "message": "Speicherplatz nicht ausreichend, bitte Speicher freigeben und erneut versuchen",
+        "description": "Speicherfehlermeldung"
+    },
+    "wallpaperSetError": {
+        "message": "Hintergrundbild konnte nicht gesetzt werden, bitte erneut versuchen",
+        "description": "Fehler beim Setzen des Hintergrundbilds"
+    },
+    "aboutTab": {
+        "message": "Über",
+        "description": "Über-Tab"
+    },
+    "aboutTitle": {
+        "message": "Über TabMark",
+        "description": "Titel der Über-Seite"
+    },
+    "contactUs": {
+        "message": "Kontaktieren Sie uns",
+        "description": "Kontakt-Link"
+    },
+    "version": {
+        "message": "Version $1",
+        "description": "Die Versionsnummer der Anwendung"
+    },
+    "officialWebsite": {
+        "message": "Offizielle Website",
+        "description": "Offizieller Website-Link-Text"
+    },
+    "feedback": {
+        "message": "Email",
+        "description": "Feedback-Link-Text"
+    },
+    "settingsUpdateTip": {
+        "message": "Hier können Sie Hintergrundfarbe, Hintergrundbild, schwebenden Ball, empfohlene Websites, Link-Öffnungsweise, ungültige Lesezeichen bereinigen...",
+        "description": "Einstellungen-Update-Tipp"
+    },
+    "deleteSuccess": {
+        "message": "Erfolgreich gelöscht",
+        "description": "Toast-Nachricht bei erfolgreicher Löschung eines Elements"
+    },
+    "quickLinksTab": {
+        "message": "Website-Empfehlungen",
+        "description": "Website-Empfehlungen Tab"
+    },
+    "quickLinksSettings": {
+        "message": "Website-Empfehlungen Einstellungen",
+        "description": "Website-Empfehlungen Einstellungen"
+    },
+    "quickLinksDescription": {
+        "message": "Wenn aktiviert, werden Ihre am häufigsten besuchten Websites unter der Suchleiste für einen schnellen Zugriff angezeigt. Die Empfehlungsliste wird automatisch aktualisiert, wenn Sie neue Seiten besuchen.",
+        "description": "Beschreibung der Website-Empfehlungen"
+    },
+    "enableQuickLinks": {
+        "message": "Website-Empfehlungen aktivieren",
+        "description": "Option zum Aktivieren der Website-Empfehlungen"
+    },
+    "namePrompt": {
+        "message": "Wie möchten Sie genannt werden?",
+        "description": "Aufforderung zur Eingabe des Benutzernamens"
+    },
+    "openAllBookmarks": {
+        "message": "Alle Lesezeichen öffnen",
+        "description": "Öffnet alle Lesezeichen im Ordner"
+    },
+    "bookmarkCleanupTitle": {
+        "message": "Lesezeichen aufräumen",
+        "description": "Titel des Links zum Aufräumen der Lesezeichen"
+    },
+    "bookmarkCleanupNotInstalled": {
+        "message": "Die Lesezeichen-Aufräumen-Erweiterung ist nicht installiert. Möchten Sie sie aus dem Chrome Web Store installieren?",
+        "description": "Aufforderung zur Installation der Lesezeichen-Aufräumen-Erweiterung"
+    },
+    "newFeatureTitle": {
+        "message": "Neue Funktionen",
+        "description": "Titel der neuen Funktionen"
+    },
+    "bookmarkCleanupFeature": {
+        "message": "Neue Lesezeichen-Aufräumen-Funktion: Klicken Sie auf das Einstellungssymbol in der Seitenleiste, installieren Sie die Lesezeichen-Aufräumen-Erweiterung, um doppelte und ungültige Lesezeichen einfach zu bereinigen. Sie können auch Ihre Lesezeichen-Statistiken sehen.",
+        "description": "Information über die Lesezeichen-Aufräumen-Funktion"
+    },
+    "bookmarkManagementTab": {
+        "message": "Lesezeichen-Verwaltung",
+        "description": "Lesezeichen-Verwaltung Tab-Name"
+    },
+    "bookmarkCleanupSettingsTitle": {
+        "message": "Lesezeichen aufräumen & Statistiken",
+        "description": "Titel der Lesezeichen-Aufräumen-Einstellungen"
+    },
+    "bookmarkCleanupSettingsDescription": {
+        "message": "Bereinigen Sie doppelte und ungültige Lesezeichen, sehen Sie Lesezeichen-Nutzungsstatistiken, um Ihre Lesezeichen besser zu verwalten.",
+        "description": "Beschreibung der Lesezeichen-Aufräumen-Funktion"
+    },
+    "openBookmarkCleanup": {
+        "message": "Lesezeichen-Aufräumen-Tool öffnen",
+        "description": "Button-Text zum Öffnen des Lesezeichen-Aufräumen-Tools"
+    },
+    "floatingBallClickTip": {
+        "message": "Klicken",
+        "description": "Schwebender Ball Klick-Tipp"
+    },
+    "floatingBallClickDesc": {
+        "message": "Schnellsuche öffnen",
+        "description": "Schwebender Ball Klick-Funktionsbeschreibung"
+    },
+    "floatingBallAltClickTip": {
+        "message": "Alt + Klick",
+        "description": "Schwebender Ball Alt+Klick-Tipp"
+    },
+    "floatingBallAltClickDesc": {
+        "message": "Seitenleiste öffnen",
+        "description": "Schwebender Ball Alt+Klick-Funktionsbeschreibung"
+    },
+    "floatingBallShortcutTip": {
+        "message": "Alt/Command + B",
+        "description": "Schwebender Ball Tastenkombination-Tipp"
+    },
+    "floatingBallShortcutDesc": {
+        "message": "Tastenkombination zum Öffnen der Seitenleiste",
+        "description": "Schwebender Ball Tastenkombination-Funktionsbeschreibung"
+    },
+    "doNotShowAgain": {
+        "message": "Nicht mehr anzeigen",
+        "description": "Button-Text zum Ausblenden des Tooltips"
+    },
+    "linkOpeningTab": {
+        "message": "Link-Öffnung",
+        "description": "Tab für Link-Öffnungseinstellungen"
+    },
+    "linkOpeningSettingsTitle": {
+        "message": "Link-Öffnungseinstellungen",
+        "description": "Titel für Link-Öffnungseinstellungen"
+    },
+    "linkOpeningDescription": {
+        "message": "Legen Sie fest, wie Lesezeichen und Schnelllinks geöffnet werden, wenn sie auf der Hauptseite angeklickt werden.",
+        "description": "Beschreibung der Einstellungen für das Öffnen von Links"
+    },
+    "sidePanelLinkOpeningTitle": {
+        "message": "Linköffnung im Seitenbereich",
+        "description": "Titel für die Einstellungen zum Öffnen von Links im Seitenbereich"
+    },
+    "sidePanelLinkOpeningDescription": {
+        "message": "Konfigurieren Sie, wie Lesezeichen und Schnelllinks geöffnet werden, wenn sie im Seitenbereich angeklickt werden",
+        "description": "Beschreibung für die Einstellungen zum Öffnen von Links im Seitenbereich"
+    },
+    "sidePanelOpenInNewTab": {
+        "message": "In neuem Tab öffnen",
+        "description": "Option zum Öffnen von Links in einem neuen Tab, wenn sie im Seitenbereich angeklickt werden"
+    },
+    "sidePanelOpenInSidepanel": {
+        "message": "Im Seitenbereich öffnen",
+        "description": "Option zum Öffnen von Links innerhalb des Seitenbereichs"
+    },
+    "sidebarFeaturesFeature": {
+        "message": "Zwei neue Funktionen hinzugefügt:\n1. Schnelle Seitenleiste:\nDrücken Sie Alt/Command + B auf einer beliebigen Webseite, um die Seitenleiste für schnellen Zugriff auf Lesezeichen und Suchfunktionen zu öffnen.\n\n2. Link-Öffnungseinstellungen:\nPassen Sie in den Einstellungen an, wie Lesezeichen und Schnelllinks geöffnet werden, mit der Option, sie in neuen Tabs zu öffnen.",
+        "description": "Einheitlicher Tipp für Seitenleistensuche und Link-Öffnungsfunktionen"
+    },
+    "addSearchEngine": {
+        "message": "Hinzufügen",
+        "description": "Text für die Schaltfläche zum Hinzufügen einer Suchmaschine"
+    },
+    "searchEnginesTitle": {
+        "message": "Suchmaschinen-Einstellungen",
+        "description": "Titel für Suchmaschinen-Einstellungen"
+    },
+    "aiSearchEnginesTitle": {
+        "message": "KI-Suche",
+        "description": "Titel für KI-Suchmaschinen-Kategorie"
+    },
+    "generalSearchEnginesTitle": {
+        "message": "Allgemeine Suche",
+        "description": "Titel für allgemeine Suchmaschinen-Kategorie"
+    },
+    "socialSearchEnginesTitle": {
+        "message": "Soziale Medien",
+        "description": "Titel für Social-Media-Suchkategorie"
+    },
+    "customSearchEnginesTitle": {
+        "message": "Benutzerdefinierte Suchmaschinen",
+        "description": "Titel für benutzerdefinierte Suchmaschinen-Kategorie"
+    },
+    "searchEngineNamePlaceholder": {
+        "message": "Name der Suchmaschine",
+        "description": "Platzhalter für Suchmaschinen-Namenseingabe"
+    },
+    "searchEngineUrlPlaceholder": {
+        "message": "Such-URL (verwenden Sie %s als Abfrage-Platzhalter)",
+        "description": "Platzhalter für Suchmaschinen-URL-Eingabe"
+    },
+    "searchEngineIconPlaceholder": {
+        "message": "Symbol-URL (optional, wird automatisch abgerufen, wenn leer)",
+        "description": "Platzhalter für Suchmaschinen-Symbol-Eingabe"
+    },
+    "searchEngineAddSuccess": {
+        "message": "Suchmaschine erfolgreich hinzugefügt",
+        "description": "Erfolgsmeldung beim Hinzufügen einer Suchmaschine"
+    },
+    "searchEngineAddError": {
+        "message": "Fehler beim Hinzufügen der Suchmaschine, bitte versuchen Sie es erneut",
+        "description": "Fehlermeldung beim Hinzufügen einer Suchmaschine"
+    },
+    "searchEngineDeleteConfirm": {
+        "message": "Möchten Sie diese Suchmaschine wirklich löschen?",
+        "description": "Bestätigungsmeldung zum Löschen einer Suchmaschine"
+    },
+    "searchEngineNameRequired": {
+        "message": "Bitte geben Sie einen Namen für die Suchmaschine ein",
+        "description": "Pflichtfeld-Meldung für Suchmaschinenname"
+    },
+    "searchEngineUrlRequired": {
+        "message": "Bitte geben Sie eine URL für die Suchmaschine ein",
+        "description": "Pflichtfeld-Meldung für Suchmaschinen-URL"
+    },
+    "searchEngineUrlInvalid": {
+        "message": "Bitte geben Sie eine gültige URL mit %s als Abfrage-Platzhalter ein",
+        "description": "Ungültiges Format-Meldung für Suchmaschinen-URL"
+    },
+    "searchEngineUpdateFeature": {
+        "message": "Die Suchmaschinen-Wechselfunktion wurde aktualisiert:\n1. Klicken Sie auf das Suchsymbol, um die Standard-Suchmaschine festzulegen\n2. Unterstützung für benutzerdefinierte Suchmaschinen\n3. Verwenden Sie die Tab-Leiste für temporäres Umschalten der aktuellen Suche",
+        "description": "Details zur Aktualisierung der Suchmaschinen-Wechselfunktion"
+    },
+    "layoutTab": {
+        "message": "Layout",
+        "description": "Layout-Einstellungen Tab-Name"
+    },
+    "layoutSettingsTitle": {
+        "message": "Layout-Einstellungen",
+        "description": "Titel für Layout-Einstellungen"
+    },
+    "layoutSettingsDescription": {
+        "message": "Anzeige von Oberflächenelementen anpassen",
+        "description": "Beschreibung der Layout-Einstellungen"
+    },
+    "bookmarkManagementTitle": {
+        "message": "Lesezeichen-Verwaltung",
+        "description": "Titel für Lesezeichen-Verwaltung"
+    },
+    "bookmarkManagementDescription": {
+        "message": "Anzeige und Verhalten von Lesezeichen anpassen",
+        "description": "Beschreibung der Lesezeichen-Verwaltung"
+    },
+    "bookmarkWidthTitle": {
+        "message": "Lesezeichen-Breite",
+        "description": "Title for bookmark width settings"
+    },
+    "previewText": {
+        "message": "Lesezeichen pro Zeile:",
+        "description": "Text for bookmark width preview"
+    },
+    "bookmarkHeightTitle": {
+        "message": "Lesezeichen-Kartenhöhe",
+        "description": "Title for bookmark card height settings"
+    },
+    "heightPreviewText": {
+        "message": "Passen Sie die Höhe der Lesezeichenkarten an",
+        "description": "Text for bookmark height preview"
+    },
+    "addToDefaultFolders": {
+        "message": "An Startseite anheften"
+    },
+    "removeFromDefaultFolders": {
+        "message": "Losheften"
+    },
+    "addedToDefaultFolders": {
+        "message": "$1 wurde an die Startseite angeheftet"
+    },
+    "removedFromDefaultFolders": {
+        "message": "$1 wurde losgeheftet"
+    },
+    "maxDefaultFoldersReached": {
+        "message": "Sie können maximal 8 Ordner anheften"
+    },
+    "deleteFolderError": {
+        "message": "Ordner konnte nicht gelöscht werden, bitte versuchen Sie es erneut"
+    },
+    "themeTitle": {
+        "message": "Design-Einstellungen",
+        "description": "Titel der Design-Einstellungen"
+    },
+    "lightTheme": {
+        "message": "Hell",
+        "description": "Helles Design Option"
+    },
+    "darkTheme": {
+        "message": "Dunkel",
+        "description": "Dunkles Design Option"
+    },
+    "autoTheme": {
+        "message": "System folgen",
+        "description": "System Design Option"
+    },
+    "searchTab": {
+        "message": "Suche",
+        "description": "Name des Sucheinstellungen-Tabs"
+    },
+    "searchSettingsTitle": {
+        "message": "Sucheinstellungen",
+        "description": "Titel der Sucheinstellungsseite"
+    },
+    "searchSettingsDescription": {
+        "message": "Anzeige und Verhalten der Suchvorschläge anpassen",
+        "description": "Beschreibung der Sucheinstellungsseite"
+    },
+    "searchSuggestionsTitle": {
+        "message": "Suchvorschläge-Einstellungen",
+        "description": "Titel der Suchvorschläge-Einstellungen"
+    },
+    "showHistorySuggestions": {
+        "message": "Verlaufsvorschläge anzeigen",
+        "description": "Option zum Anzeigen von Verlaufsvorschlägen"
+    },
+    "showBookmarkSuggestions": {
+        "message": "Lesezeichenvorschläge anzeigen",
+        "description": "Option zum Anzeigen von Lesezeichenvorschlägen"
+    },
+    "containerWidthTitle": {
+        "message": "Lesezeichen-Container-Breite",
+        "description": "Titel für Lesezeichen-Container-Breite-Einstellungen"
+    },
+    "containerWidthDescription": {
+        "message": "Anpassen Sie die Breite des Lesezeichen-Containers im Seitenbereich",
+        "description": "Beschreibung der Lesezeichen-Container-Breite-Einstellungen"
+    },
+    "interfaceElementsTitle": {
+        "message": "Anzeige der Benutzeroberfläche",
+        "description": "Titel der Einstellungen für die Anzeige der Benutzeroberfläche"
+    },
+    "showSearchBox": {
+        "message": "Suchfeld anzeigen",
+        "description": "Option zum Anzeigen des Suchfelds"
+    },
+    "showWelcomeMessage": {
+        "message": "Willkommensnachricht anzeigen",
+        "description": "Option zum Anzeigen der Willkommensnachricht"
+    },
+    "showFooter": {
+        "message": "Fußzeile anzeigen",
+        "description": "Option zum Anzeigen der Fußzeile"
+    },
+    "showFolderIcons": {
+        "message": "Ordnersymbole anzeigen",
+        "description": "Option zum Anzeigen von Ordnersymbolen in der linken Seitenleiste"
+    },
+    "quickAccessLinksTitle": {
+        "message": "Schnellzugriffslinks",
+        "description": "Titel der Schnellzugriffslinks-Einstellungen"
+    },
+    "showHistoryLink": {
+        "message": "Verlauf anzeigen",
+        "description": "Option zum Anzeigen des Verlaufslinks"
+    },
+    "showDownloadsLink": {
+        "message": "Downloads anzeigen",
+        "description": "Option zum Anzeigen des Download-Links"
+    },
+    "showPasswordsLink": {
+        "message": "Passwörter anzeigen",
+        "description": "Option zum Anzeigen des Passwort-Links"
+    },
+    "showBookmarksLink": {
+        "message": "Lesezeichen-Manager anzeigen",
+        "description": "Lesezeichen-Manager-Link-Option anzeigen"
+    },
+    "bookmarksLinkTitle": {
+        "message": "Lesezeichen-Manager",
+        "description": "Lesezeichen-Manager-Link-Titel"
+    },
+    "showExtensionsLink": {
+        "message": "Erweiterungen anzeigen",
+        "description": "Option zum Anzeigen des Erweiterungs-Links"
+    },
+    "donateTab": {
+        "message": "Spenden",
+        "description": "Donate tab name in settings"
+    },
+    "donateTitle": {
+        "message": "Unterstützen Sie die TabMark-Entwicklung",
+        "description": "Title for donation section"
+    },
+    "donateDescription": {
+        "message": "Wenn Sie TabMark nützlich finden, erwägen Sie bitte, die kontinuierliche Entwicklung zu unterstützen. Ihr Beitrag hilft uns, die Erweiterung zu verbessern und neue Funktionen hinzuzufügen.",
+        "description": "Description for donation section"
+    },
+    "wechatDonateTitle": {
+        "message": "WeChat Pay",
+        "description": "Title for WeChat donation option"
+    },
+    "paypalDonateTitle": {
+        "message": "PayPal",
+        "description": "Title for PayPal donation option"
+    },
+    "scanQRCodeToDonate": {
+        "message": "QR-Code scannen, um zu spenden",
+        "description": "Text for scanning QR code to donate"
+    },
+    "donateListLink": {
+        "message": "Spendenliste anzeigen",
+        "description": "Link text to view donation list"
+    },
+    "donateWithPaypal": {
+        "message": "Mit PayPal spenden",
+        "description": "Text for PayPal donation button"
+    },
+    "thankYouForSupport": {
+        "message": "Vielen Dank für Ihre Unterstützung!",
+        "description": "Thank you message for donations"
+    },
+    "bookmarksPerRow": {
+        "message": "$1 pro Zeile",
+        "description": "Anzahl der Lesezeichen pro Zeile"
+    },
+    "grokLabel": {
+        "message": "Grok",
+        "description": "Grok Suchmaschinen-Label"
+    },
+    "searchBoxDisplayTitle": {
+        "message": "Suchfeld-Anzeige",
+        "description": "Titel für die Suchfeld-Anzeigeeinstellungen"
+    },
+    "shortcutsTab": {
+        "message": "Tastenkombinationen",
+        "description": "Shortcuts settings tab name"
+    },
+    "shortcutsSettingsTitle": {
+        "message": "Tastenkombinationen-Einstellungen",
+        "description": "Shortcuts settings title"
+    },
+    "shortcutsSettingsDescription": {
+        "message": "Tastenkombinationen für schnellen Zugriff anpassen",
+        "description": "Shortcuts settings description"
+    },
+    "sidebarShortcutName": {
+        "message": "Seitenleisten-Tastenkombination",
+        "description": "Sidebar shortcut name"
+    },
+    "configureShortcuts": {
+        "message": "Tastenkombinationen konfigurieren",
+        "description": "Configure shortcuts button text"
+    },
+    "shortcutValue": {
+        "message": "Standard",
+        "description": "Default shortcut value"
+    },
+    "wheelSwitchingTab": {
+        "message": "Ordnerwechsel",
+        "description": "Wheel switching tab name in settings"
+    },
+    "wheelSwitchingSettingsTitle": {
+        "message": "Einstellungen für Mausrad-Wechsel",
+        "description": "Title for wheel switching settings"
+    },
+    "wheelSwitchingDescription": {
+        "message": "Wenn der Mausrad-Wechsel aktiviert ist, können Sie schnell zwischen angehefteten Ordnern wechseln, indem Sie das Mausrad in Bereichen außerhalb der Lesezeichenliste auf der Hauptseite scrollen",
+        "description": "Description for wheel switching settings"
+    },
+    "enableWheelSwitching": {
+        "message": "Mausrad-Wechsel aktivieren",
+        "description": "Option to enable wheel switching feature"
+    },
+    "shortcutsFeature": {
+        "message": "Neue Funktionen:\n1. Anpassung der Seitenleisten-Tastenkombination: Sie können jetzt die Tastenkombination zum Öffnen oder Schließen der Seitenleiste in den Chrome-Erweiterungstastenkombinationseinstellungen anpassen\n2. In Einstellungen > Tastenkombinationen können Sie schnell zur Chrome-Tastenkombinationseinstellungsseite springen\n3. Zweiwegsteuerung: Drücken Sie dieselbe Tastenkombination, um die Seitenleiste zu öffnen oder zu schließen, für mehr Komfort\n\nBenutzerdefinierte Tab-Funktionen:\n1. Sie können jetzt den auf Ihrer Startseite angezeigten Inhalt im Tab \"Layout-Einstellungen\" anpassen\n2. Wählen Sie, ob die Suchleiste, die Willkommensnachricht und die Fußzeile angezeigt werden sollen\n3. Passen Sie an, welche Schnellzugriffslinks angezeigt werden\n4. Passen Sie die Breite des Lesezeichenbehälters für Ihr bevorzugtes Layout an\n5. In den \"Sucheinstellungen\" können Sie wählen, ob Verlaufs- und Lesezeichenvorschläge angezeigt werden sollen\n6. Eine Option \"Spenden\" wurde hinzugefügt, über die Sie die Entwicklung über WeChat unterstützen können, wenn Ihnen diese Erweiterung gefällt",
+        "description": "Informationen über die Tastenkombinationsanpassungsfunktion"
+    },
+    "wechatGroup": {
+        "message": "WeChat Gruppe",
+        "description": "WeChat Gruppenname"
+    },
+    "feedbacks": {
+        "message": "Feedback",
+        "description": "Feedback-Link-Text"
+    },
+    "searchResultsOpeningTitle": {
+        "message": "Öffnungsmethode für Suchergebnisse",
+        "description": "Titel für die Einstellungen zur Öffnungsmethode von Suchergebnissen"
+    },
+    "openSearchInNewTab": {
+        "message": "Suchergebnisse in neuem Tab öffnen",
+        "description": "Option zum Öffnen von Suchergebnissen in einem neuen Tab"
+    },
+    "searchSuggestionsFeature": {
+        "message": "Version 1.121 Updates:\n1. Suche in allen Suchmaschinen korrigiert: Die Suche mit Cmd/Ctrl+Enter umfasst jetzt auch die Standard-Suchmaschine\n2. Einstellung für die Öffnungsmethode von Suchergebnissen hinzugefügt: Wählen Sie, ob Suchergebnisse in einem neuen Tab oder auf der aktuellen Seite geöffnet werden sollen\n3. Anpassung der Lesezeichenkartenhöhe hinzugefügt: Passen Sie die Höhe der Lesezeichenkarten nach Ihren Vorlieben an\n4. Neue Einstellung für die Öffnung von Links im Seitenbereich hinzugefügt: Wählen Sie, ob Links im Seitenbereich oder in einem neuen Tab geöffnet werden sollen\n5. Mehrere Benutzeroberflächen-Probleme für eine bessere Benutzererfahrung behoben",
+        "description": "Informationen zu den Updates der Version 1.121"
+    },
+    "bookmarkCardHeightTitle": {
+        "message": "Lesezeichenkartenhöhe",
+        "description": "Titel für die Einstellungen der Lesezeichenkartenhöhe"
+    },
+    "bookmarkCardHeightValue": {
+        "message": "$1 Pixel",
+        "description": "Wert für die Lesezeichenkartenhöhe"
+    },
+    "bingWallpapersTitle": {
+        "message": "Bing Hintergrundbilder",
+        "description": "Titel für Bing Hintergrundbilder"
+    },
+    "presetWallpaperTitle": {
+        "message": "Voreingestellte Hintergrundbilder",
+        "description": "Titel für voreingestellte Hintergrundbilder"
+    }
+}

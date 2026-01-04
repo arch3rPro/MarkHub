@@ -1,0 +1,42 @@
+{
+  "quickLinksSettings": {
+    "message": "快捷链接设置"
+  },
+  "quickLinksDescription": {
+    "message": "开启快捷链接后，将在搜索框下方显示您最常访问的网站，方便快速访问。访问新的网站时会自动更新快捷链接列表。"
+  },
+  "enableQuickLinks": {
+    "message": "启用网站推荐"
+  },
+  "showBookmarkCount": {
+    "message": "显示书签数量"
+  },
+  "transparencyTitle": {
+    "message": "透明度设置",
+    "description": "透明度设置的标题"
+  },
+  "transparencyDescription": {
+    "message": "修改书签栏、展示区域等背景色的透明度",
+    "description": "透明度设置的描述"
+  },
+  "bingRegionLabel": {
+    "message": "壁纸地区",
+    "description": "必应壁纸地区选择标签"
+  },
+  "bingRegionChina": {
+    "message": "国内版",
+    "description": "必应壁纸中国地区"
+  },
+  "bingRegionGlobal": {
+    "message": "国际版",
+    "description": "必应壁纸国际地区"
+  },
+  "wallpaperBlurTitle": {
+    "message": "壁纸模糊设置",
+    "description": "壁纸模糊设置的标题"
+  },
+  "wallpaperBlurDescription": {
+    "message": "调整背景壁纸的模糊程度",
+    "description": "壁纸模糊设置的描述"
+  }
+}

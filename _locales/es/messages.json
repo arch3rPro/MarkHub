@@ -1,0 +1,794 @@
+{
+    "extName": {
+        "message": "TabMark",
+        "description": "El nombre de la extensión"
+    },
+    "extDescription": {
+        "message": "Una página de nueva pestaña para organizar y acceder a tus marcadores fácilmente.",
+        "description": "La descripción de la extensión"
+    },
+    "welcomeMessage": {
+        "message": "Buenos días",
+        "description": "Mensaje de bienvenida mostrado al usuario"
+    },
+    "searchPlaceholder": {
+        "message": "Buscar o ingresar dirección web",
+        "description": "Texto de marcador de posición para el campo de búsqueda"
+    },
+    "editDialogTitle": {
+        "message": "Editar enlace rápido",
+        "description": "Título del cuadro de diálogo de edición"
+    },
+    "editNameLabel": {
+        "message": "Nombre:",
+        "description": "Etiqueta para el campo de entrada de nombre en el cuadro de diálogo de edición"
+    },
+    "editUrlLabel": {
+        "message": "URL:",
+        "description": "Etiqueta para el campo de entrada de URL en el cuadro de diálogo de edición"
+    },
+    "folderLabel": {
+        "message": "Carpeta:",
+        "description": "Etiqueta para el selector de carpeta en el cuadro de diálogo de edición"
+    },
+    "selectFolder": {
+        "message": "Seleccionar una carpeta",
+        "description": "Opción predeterminada para el selector de carpeta"
+    },
+    "saveButton": {
+        "message": "Guardar",
+        "description": "Texto para el botón de guardar"
+    },
+    "cancelButton": {
+        "message": "Cancelar",
+        "description": "Texto para el botón de cancelar"
+    },
+    "confirmDeleteMessage": {
+        "message": "¿Estás seguro de que deseas eliminar \"$1\"?",
+        "description": "Mensaje de confirmación para eliminar un elemento"
+    },
+    "confirmDeleteButton": {
+        "message": "Eliminar",
+        "description": "Texto para el botón de confirmación de eliminación"
+    },
+    "openInNewTab": {
+        "message": "Abrir en nueva pestaña",
+        "description": "Opción para abrir enlaces en nueva pestaña"
+    },
+    "openInNewWindow": {
+        "message": "Abrir en nueva ventana",
+        "description": "Elemento del menú contextual para abrir el enlace en una nueva ventana"
+    },
+    "openInIncognito": {
+        "message": "Abrir en ventana de incógnito",
+        "description": "Elemento del menú contextual para abrir el enlace en una ventana de incógnito"
+    },
+    "editQuickLink": {
+        "message": "Editar",
+        "description": "Elemento del menú contextual para editar el enlace rápido"
+    },
+    "deleteQuickLink": {
+        "message": "Eliminar",
+        "description": "Elemento del menú contextual para eliminar el enlace rápido"
+    },
+    "copyLink": {
+        "message": "Copiar enlace",
+        "description": "Elemento del menú contextual para copiar el enlace"
+    },
+    "createQRCode": {
+        "message": "Crear código QR",
+        "description": "Elemento del menú contextual para crear un código QR"
+    },
+    "confirmDeleteBookmark": {
+        "message": "¿Estás seguro de que deseas eliminar el marcador \"$1\"?",
+        "description": "Mensaje de confirmación para eliminar un marcador"
+    },
+    "rename": {
+        "message": "Renombrar",
+        "description": "Opción para renombrar un elemento"
+    },
+    "delete": {
+        "message": "Eliminar",
+        "description": "Opción para eliminar un elemento"
+    },
+    "setAsHomepage": {
+        "message": "Establecer como página de inicio",
+        "description": "Opción para establecer una página como página de inicio"
+    },
+    "confirmDeleteFolder": {
+        "message": "¿Estás seguro de que deseas eliminar la carpeta \"$1\"?",
+        "description": "Mensaje de confirmación para eliminar una carpeta"
+    },
+    "categoryDeleted": {
+        "message": "Categoría eliminada",
+        "description": "Mensaje de notificación cuando se elimina una categoría"
+    },
+    "searchEngineIconNotFound": {
+        "message": "Icono del motor de búsqueda no encontrado",
+        "description": "Mensaje de error cuando no se encuentra el icono del motor de búsqueda"
+    },
+    "folderDeleted": {
+        "message": "Carpeta eliminada: ID=$1, Título=$2",
+        "description": "Mensaje de registro cuando se elimina una carpeta"
+    },
+    "morningGreeting": {
+        "message": "Buenos días👋",
+        "description": "Saludo de la mañana"
+    },
+    "afternoonGreeting": {
+        "message": "Buenas tardes👋",
+        "description": "Saludo de la tarde"
+    },
+    "eveningGreeting": {
+        "message": "Buenas noches👋",
+        "description": "Saludo de la noche"
+    },
+    "linkCopied": {
+        "message": "Enlace copiado al portapapeles",
+        "description": "Mensaje de notificación cuando un enlace se copia con éxito"
+    },
+    "copyLinkFailed": {
+        "message": "Error al copiar el enlace",
+        "description": "Mensaje de notificación cuando falla la copia de un enlace"
+    },
+    "invalidBookmark": {
+        "message": "Marcador o URL inválido",
+        "description": "Mensaje de notificación cuando se intenta copiar un marcador inválido"
+    },
+    "download": {
+        "message": "Descargar",
+        "description": "Texto para el botón de descarga"
+    },
+    "copied": {
+        "message": "Copiado",
+        "description": "Texto mostrado después de copiar un enlace"
+    },
+    "confirmDeleteTitle": {
+        "message": "Confirmar eliminación",
+        "description": "Título del cuadro de diálogo de confirmación de eliminación"
+    },
+    "scanQRCode": {
+        "message": "Escanear código QR",
+        "description": "Título para la ventana modal del código QR"
+    },
+    "renameFolderTitle": {
+        "message": "Renombrar carpeta",
+        "description": "Título del cuadro de diálogo para renombrar la carpeta"
+    },
+    "doubaoTab": {
+        "message": "Doubao",
+        "description": "Pestaña del motor de búsqueda Doubao"
+    },
+    "metasoTab": {
+        "message": "Metaso",
+        "description": "Pestaña del motor de búsqueda Metaso"
+    },
+    "nameLabel": {
+        "message": "Nombre",
+        "description": "Etiqueta de nombre"
+    },
+    "moreSearchSupportToast": {
+        "message": "Más soporte de búsqueda próximamente",
+        "description": "Notificación para más soporte de búsqueda"
+    },
+    "settingsTitle": {
+        "message": "Configuraciones",
+        "description": "Título de configuraciones"
+    },
+    "appearanceTab": {
+        "message": "Apariencia",
+        "description": "Pestaña de configuraciones de apariencia"
+    },
+    "floatingBallTab": {
+        "message": "Bola flotante",
+        "description": "Pestaña de configuraciones de la bola flotante"
+    },
+    "backgroundColorTitle": {
+        "message": "Color de fondo",
+        "description": "Título de configuraciones de color de fondo"
+    },
+    "floatingBallSettingsTitle": {
+        "message": "Configuraciones de la bola flotante",
+        "description": "Título de configuraciones de la bola flotante"
+    },
+    "floatingBallDescription": {
+        "message": "Cuando está habilitado, un icono flotante clicable aparecerá en la esquina superior derecha de la página para un acceso rápido a los motores de búsqueda y marcadores.",
+        "description": "Descripción de la función de la bola flotante"
+    },
+    "enableFloatingBall": {
+        "message": "Habilitar bola flotante",
+        "description": "Opción para habilitar la bola flotante"
+    },
+    "historyLinkTitle": {
+        "message": "Historial",
+        "description": "Título del enlace de historial"
+    },
+    "downloadsLinkTitle": {
+        "message": "Descargas",
+        "description": "Título del enlace de descargas"
+    },
+    "passwordsLinkTitle": {
+        "message": "Contraseñas",
+        "description": "Título del enlace de contraseñas"
+    },
+    "extensionsLinkTitle": {
+        "message": "Extensiones",
+        "description": "Título del enlace de extensiones"
+    },
+    "settingsLinkTitle": {
+        "message": "Configuraciones",
+        "description": "Título del enlace de configuraciones"
+    },
+    "confirmDeleteQuickLinkMessage": {
+        "message": "¿Estás seguro de que deseas eliminar el enlace rápido \"$1\"? Este enlace no aparecerá en la lista de enlaces rápidos.",
+        "description": "Mensaje de confirmación para eliminar un enlace rápido"
+    },
+    "yearProgress": {
+        "message": "Progreso anual",
+        "description": "Progreso anual mostrado"
+    },
+    "searchTips": {
+        "message": "Usar esta vez:",
+        "description": "Texto de consejos de búsqueda"
+    },
+    "baiduTab": {
+        "message": "Baidu",
+        "description": "Pestaña del motor de búsqueda Baidu"
+    },
+    "searchEngineUpdateTip": {
+        "message": "La función de cambio de motor de búsqueda ha sido actualizada",
+        "description": "Notificación sobre la actualización de la función de motor de búsqueda"
+    },
+    "searchEngineUpdateDetail": {
+        "message": "Haga clic en el icono de búsqueda para establecer el motor de búsqueda predeterminado, admite motores de búsqueda personalizados, use la barra de pestañas para cambiar temporalmente",
+        "description": "Detalles sobre la función de cambio de motor de búsqueda"
+    },
+    "googleLabel": {
+        "message": "Google",
+        "description": "Etiqueta del motor de búsqueda Google"
+    },
+    "bingLabel": {
+        "message": "Bing",
+        "description": "Etiqueta del motor de búsqueda Bing"
+    },
+    "baiduLabel": {
+        "message": "Baidu",
+        "description": "Etiqueta del motor de búsqueda Baidu"
+    },
+    "kimiLabel": {
+        "message": "Kimi",
+        "description": "Etiqueta del motor de búsqueda Kimi"
+    },
+    "doubaoLabel": {
+        "message": "Doubao",
+        "description": "Etiqueta del motor de búsqueda Doubao"
+    },
+    "chatgptLabel": {
+        "message": "ChatGPT",
+        "description": "Etiqueta del motor de búsqueda ChatGPT"
+    },
+    "feloLabel": {
+        "message": "Felo",
+        "description": "Etiqueta del motor de búsqueda Felo"
+    },
+    "metasoLabel": {
+        "message": "Metaso",
+        "description": "Etiqueta del motor de búsqueda Metaso"
+    },
+    "backgroundTitle": {
+        "message": "Configuración de fondo",
+        "description": "Título de configuración de fondo"
+    },
+    "resetWallpaper": {
+        "message": "Restablecer fondo",
+        "description": "Texto del botón para restablecer el fondo de pantalla"
+    },
+    "uploadWallpaper": {
+        "message": "Subir fondo",
+        "description": "Texto del botón para subir fondo de pantalla"
+    },
+    "wallpaperResetSuccess": {
+        "message": "Fondo restablecido por defecto",
+        "description": "Mensaje de éxito al restablecer el fondo de pantalla"
+    },
+    "solidBackgroundTitle": {
+        "message": "Color sólido",
+        "description": "Título de configuración de color sólido"
+    },
+    "wallpaperTitle": {
+        "message": "Fondo de pantalla",
+        "description": "Título de configuración de fondo de pantalla"
+    },
+    "uploadedWallpaperBadge": {
+        "message": "Local",
+        "description": "Texto de insignia para fondos de pantalla subidos por el usuario"
+    },
+    "aboutTab": {
+        "message": "Acerca de",
+        "description": "Pestaña Acerca de"
+    },
+    "aboutTitle": {
+        "message": "Acerca de TabMark",
+        "description": "Título de la página Acerca de"
+    },
+    "contactUs": {
+        "message": "Contáctenos",
+        "description": "Enlace de contacto"
+    },
+    "version": {
+        "message": "Versión $1",
+        "description": "El número de versión de la aplicación"
+    },
+    "officialWebsite": {
+        "message": "Sitio Web Oficial",
+        "description": "Texto del enlace del sitio web oficial"
+    },
+    "feedback": {
+        "message": "Email",
+        "description": "Texto del enlace de comentarios"
+    },
+    "settingsUpdateTip": {
+        "message": "Aquí puede configurar el color de fondo, fondo de pantalla, bola flotante, sitios recomendados, método de apertura de enlaces, limpiar marcadores inválidos...",
+        "description": "Consejo de actualización de configuración"
+    },
+    "deleteSuccess": {
+        "message": "Eliminado con éxito",
+        "description": "Mensaje toast cuando un elemento se elimina con éxito"
+    },
+    "quickLinksTab": {
+        "message": "Sitios Recomendados",
+        "description": "Pestaña de sitios recomendados"
+    },
+    "quickLinksSettings": {
+        "message": "Configuración de Sitios Recomendados",
+        "description": "Configuración de sitios recomendados"
+    },
+    "quickLinksDescription": {
+        "message": "Cuando está habilitado, sus sitios web más visitados se mostrarán debajo de la barra de búsqueda para un acceso rápido. La lista de recomendaciones se actualizará automáticamente cuando visite nuevos sitios.",
+        "description": "Descripción de los sitios recomendados"
+    },
+    "enableQuickLinks": {
+        "message": "Habilitar Sitios Recomendados",
+        "description": "Opción para habilitar sitios recomendados"
+    },
+    "namePrompt": {
+        "message": "¿Cómo te gustaría que te llamemos?",
+        "description": "Mensaje de solicitud al preguntar el nombre del usuario"
+    },
+    "openAllBookmarks": {
+        "message": "Abrir todos los marcadores",
+        "description": "Abre todos los marcadores en la carpeta"
+    },
+    "bookmarkCleanupTitle": {
+        "message": "Limpieza de marcadores",
+        "description": "Título del enlace de limpieza de marcadores"
+    },
+    "bookmarkCleanupNotInstalled": {
+        "message": "No has instalado la extensión de limpieza de marcadores. ¿Te gustaría instalarla desde la Chrome Web Store?",
+        "description": "Mensaje para instalar la extensión de limpieza de marcadores"
+    },
+    "newFeatureTitle": {
+        "message": "Consejos de nuevas funciones",
+        "description": "Título de consejos de nuevas funciones"
+    },
+    "bookmarkCleanupFeature": {
+        "message": "Nueva función de limpieza de marcadores: Haga clic en el ícono de configuración en la barra lateral, instale la extensión de limpieza de marcadores para limpiar fácilmente los marcadores duplicados e inválidos, y ver sus estadísticas de marcadores.",
+        "description": "Información sobre la función de limpieza de marcadores"
+    },
+    "bookmarkManagementTab": {
+        "message": "Gestión de Marcadores",
+        "description": "Nombre de la pestaña de gestión de marcadores"
+    },
+    "bookmarkCleanupSettingsTitle": {
+        "message": "Limpieza y Estadísticas de Marcadores",
+        "description": "Título de configuración de limpieza de marcadores"
+    },
+    "bookmarkCleanupSettingsDescription": {
+        "message": "Limpie marcadores duplicados e inválidos, vea estadísticas de uso de marcadores para ayudarle a administrar mejor sus marcadores.",
+        "description": "Descripción de la función de limpieza de marcadores"
+    },
+    "openBookmarkCleanup": {
+        "message": "Abrir Herramienta de Limpieza de Marcadores",
+        "description": "Texto del botón para abrir la herramienta de limpieza de marcadores"
+    },
+    "floatingBallClickTip": {
+        "message": "Clic",
+        "description": "Consejo de clic en la bola flotante"
+    },
+    "floatingBallClickDesc": {
+        "message": "Abrir búsqueda rápida",
+        "description": "Descripción de la función de clic en la bola flotante"
+    },
+    "floatingBallAltClickTip": {
+        "message": "Alt + Clic",
+        "description": "Consejo de Alt+clic en la bola flotante"
+    },
+    "floatingBallAltClickDesc": {
+        "message": "Abrir panel lateral",
+        "description": "Descripción de la función Alt+clic en la bola flotante"
+    },
+    "floatingBallShortcutTip": {
+        "message": "Alt/Command + B",
+        "description": "Consejo de atajo de la bola flotante"
+    },
+    "floatingBallShortcutDesc": {
+        "message": "Atajo para abrir el panel lateral",
+        "description": "Descripción de la función de atajo de la bola flotante"
+    },
+    "doNotShowAgain": {
+        "message": "No mostrar de nuevo",
+        "description": "Texto del botón para descartar el tooltip"
+    },
+    "linkOpeningTab": {
+        "message": "Apertura de Enlaces",
+        "description": "Pestaña de configuración de apertura de enlaces"
+    },
+    "linkOpeningSettingsTitle": {
+        "message": "Configuración de Apertura de Enlaces",
+        "description": "Título de configuración de apertura de enlaces"
+    },
+    "linkOpeningDescription": {
+        "message": "Establezca cómo se abren los marcadores y enlaces rápidos al hacer clic en la página principal.",
+        "description": "Descripción de la configuración de apertura de enlaces"
+    },
+    "sidePanelLinkOpeningTitle": {
+        "message": "Apertura de Enlaces en el Panel Lateral",
+        "description": "Título de la configuración de apertura de enlaces en el panel lateral"
+    },
+    "sidePanelLinkOpeningDescription": {
+        "message": "Configure cómo se abren los marcadores y enlaces rápidos al hacer clic en el panel lateral",
+        "description": "Descripción de la configuración de apertura de enlaces en el panel lateral"
+    },
+    "sidePanelOpenInNewTab": {
+        "message": "Abrir en nueva pestaña",
+        "description": "Opción para abrir enlaces en nueva pestaña al hacer clic en el panel lateral"
+    },
+    "sidePanelOpenInSidepanel": {
+        "message": "Abrir en el panel lateral",
+        "description": "Opción para abrir enlaces dentro del panel lateral"
+    },
+    "sidebarFeaturesFeature": {
+        "message": "Se han añadido dos nuevas funciones:\n1. Barra lateral rápida:\nPresione Alt/Command + B en cualquier página web para abrir la barra lateral y acceder rápidamente a los marcadores y funciones de búsqueda.\n\n2. Configuración de apertura de enlaces:\nPersonalice cómo se abren los marcadores y enlaces rápidos en la configuración, con la opción de abrirlos en nuevas pestañas.",
+        "description": "Consejo unificado para la búsqueda en la barra lateral y las funciones de apertura de enlaces"
+    },
+    "addSearchEngine": {
+        "message": "Agregar",
+        "description": "Texto del botón para agregar motor de búsqueda"
+    },
+    "searchEnginesTitle": {
+        "message": "Configuración de Motores de Búsqueda",
+        "description": "Título para la configuración de motores de búsqueda"
+    },
+    "aiSearchEnginesTitle": {
+        "message": "Búsqueda de IA",
+        "description": "Título para la categoría de motores de búsqueda de IA"
+    },
+    "generalSearchEnginesTitle": {
+        "message": "Búsqueda General",
+        "description": "Título para la categoría de motores de búsqueda generales"
+    },
+    "socialSearchEnginesTitle": {
+        "message": "Redes Sociales",
+        "description": "Título para la categoría de búsqueda en redes sociales"
+    },
+    "customSearchEnginesTitle": {
+        "message": "Motores de Búsqueda Personalizados",
+        "description": "Título para la categoría de motores de búsqueda personalizados"
+    },
+    "searchEngineNamePlaceholder": {
+        "message": "Nombre del motor de búsqueda",
+        "description": "Marcador de posición para el nombre del motor de búsqueda"
+    },
+    "searchEngineUrlPlaceholder": {
+        "message": "URL de búsqueda (use %s como marcador de consulta)",
+        "description": "Marcador de posición para la URL del motor de búsqueda"
+    },
+    "searchEngineIconPlaceholder": {
+        "message": "URL del ícono (opcional, se obtendrá automáticamente si está vacío)",
+        "description": "Marcador de posición para el ícono del motor de búsqueda"
+    },
+    "searchEngineAddSuccess": {
+        "message": "Motor de búsqueda agregado exitosamente",
+        "description": "Mensaje de éxito al agregar motor de búsqueda"
+    },
+    "searchEngineAddError": {
+        "message": "Error al agregar el motor de búsqueda, por favor intente de nuevo",
+        "description": "Mensaje de error al agregar motor de búsqueda"
+    },
+    "searchEngineDeleteConfirm": {
+        "message": "¿Está seguro de que desea eliminar este motor de búsqueda?",
+        "description": "Mensaje de confirmación para eliminar motor de búsqueda"
+    },
+    "searchEngineNameRequired": {
+        "message": "Por favor ingrese el nombre del motor de búsqueda",
+        "description": "Mensaje requerido para el nombre del motor de búsqueda"
+    },
+    "searchEngineUrlRequired": {
+        "message": "Por favor ingrese la URL del motor de búsqueda",
+        "description": "Mensaje requerido para la URL del motor de búsqueda"
+    },
+    "searchEngineUrlInvalid": {
+        "message": "Por favor ingrese una URL válida con %s como marcador de consulta",
+        "description": "Mensaje de formato inválido para la URL del motor de búsqueda"
+    },
+    "searchEngineUpdateFeature": {
+        "message": "La función de cambio de motor de búsqueda se ha actualizado:\n1. Haga clic en el icono de búsqueda para establecer el motor de búsqueda predeterminado\n2. Soporte para motores de búsqueda personalizados\n3. Use la barra de pestañas para cambiar temporalmente la búsqueda actual",
+        "description": "Detalles de la actualización de la función de cambio de motor de búsqueda"
+    },
+    "layoutTab": {
+        "message": "Diseño",
+        "description": "Nombre de la pestaña de configuración de diseño"
+    },
+    "layoutSettingsTitle": {
+        "message": "Configuración de Diseño",
+        "description": "Título para la configuración de diseño"
+    },
+    "layoutSettingsDescription": {
+        "message": "Personalizar la visualización de elementos de interfaz",
+        "description": "Descripción de la configuración de diseño"
+    },
+    "bookmarkManagementTitle": {
+        "message": "Gestión de Marcadores",
+        "description": "Título para la gestión de marcadores"
+    },
+    "bookmarkManagementDescription": {
+        "message": "Personalizar la visualización y el comportamiento de los marcadores",
+        "description": "Descripción de la gestión de marcadores"
+    },
+    "bookmarkWidthTitle": {
+        "message": "Configuración de ancho de marcadores",
+        "description": "Título para la configuración de ancho de marcadores"
+    },
+    "previewText": {
+        "message": "Marcadores por fila:",
+        "description": "Texto para la vista previa del ancho de marcadores"
+    },
+    "bookmarkHeightTitle": {
+        "message": "Altura de tarjeta de marcador",
+        "description": "Título para la configuración de altura de tarjeta de marcador"
+    },
+    "heightPreviewText": {
+        "message": "Ajustar la altura de las tarjetas de marcadores",
+        "description": "Texto para la vista previa de altura de marcadores"
+    },
+    "addToDefaultFolders": {
+        "message": "Fijar a la página de inicio"
+    },
+    "removeFromDefaultFolders": {
+        "message": "Desfijar"
+    },
+    "addedToDefaultFolders": {
+        "message": "Se fijó $1 a la página de inicio"
+    },
+    "removedFromDefaultFolders": {
+        "message": "Se desfijó $1"
+    },
+    "maxDefaultFoldersReached": {
+        "message": "Solo puede fijar hasta 8 carpetas"
+    },
+    "deleteFolderError": {
+        "message": "No se pudo eliminar la carpeta, por favor intente de nuevo"
+    },
+    "themeTitle": {
+        "message": "Configuración del tema",
+        "description": "Título de configuración del tema"
+    },
+    "lightTheme": {
+        "message": "Claro",
+        "description": "Opción de tema claro"
+    },
+    "darkTheme": {
+        "message": "Oscuro",
+        "description": "Opción de tema oscuro"
+    },
+    "autoTheme": {
+        "message": "Seguir sistema",
+        "description": "Opción de seguir tema del sistema"
+    },
+    "interfaceElementsTitle": {
+        "message": "Visualización de Elementos de Interfaz",
+        "description": "Título de configuración de visualización de elementos de interfaz"
+    },
+    "showSearchBox": {
+        "message": "Mostrar Cuadro de Búsqueda",
+        "description": "Opción para mostrar cuadro de búsqueda"
+    },
+    "showWelcomeMessage": {
+        "message": "Mostrar Mensaje de Bienvenida",
+        "description": "Opción para mostrar mensaje de bienvenida"
+    },
+    "showFooter": {
+        "message": "Mostrar Pie de Página",
+        "description": "Opción para mostrar pie de página"
+    },    "showFolderIcons": {
+        "message": "Mostrar iconos de carpeta",
+        "description": "Opción para mostrar iconos de carpeta en la barra lateral izquierda"
+    },    "quickAccessLinksTitle": {
+        "message": "Enlaces de Acceso Rápido",
+        "description": "Título de configuración de enlaces de acceso rápido"
+    },
+    "showHistoryLink": {
+        "message": "Mostrar Historial",
+        "description": "Opción para mostrar enlace de historial"
+    },
+    "showDownloadsLink": {
+        "message": "Mostrar Descargas",
+        "description": "Opción para mostrar enlace de descargas"
+    },
+    "showPasswordsLink": {
+        "message": "Mostrar Contraseñas",
+        "description": "Opción para mostrar enlace de contraseñas"
+    },
+    "showBookmarksLink": {
+        "message": "Mostrar Administrador de Marcadores",
+        "description": "Opción de enlace del administrador de marcadores"
+    },
+    "bookmarksLinkTitle": {
+        "message": "Administrador de Marcadores",
+        "description": "Título del enlace del administrador de marcadores"
+    },
+    "showExtensionsLink": {
+        "message": "Mostrar Extensiones",
+        "description": "Opción para mostrar enlace de extensiones"
+    },
+    "searchTab": {
+        "message": "Búsqueda",
+        "description": "Nombre de la pestaña de configuración de búsqueda"
+    },
+    "searchSettingsTitle": {
+        "message": "Configuración de búsqueda",
+        "description": "Título de la página de configuración de búsqueda"
+    },
+    "searchSettingsDescription": {
+        "message": "Personalizar la visualización y el comportamiento de las sugerencias de búsqueda",
+        "description": "Descripción de la página de configuración de búsqueda"
+    },
+    "searchSuggestionsTitle": {
+        "message": "Configuración de sugerencias de búsqueda",
+        "description": "Título de la configuración de sugerencias de búsqueda"
+    },
+    "showHistorySuggestions": {
+        "message": "Mostrar sugerencias del historial",
+        "description": "Opción para mostrar sugerencias del historial"
+    },
+    "showBookmarkSuggestions": {
+        "message": "Mostrar sugerencias de marcadores",
+        "description": "Opción para mostrar sugerencias de marcadores"
+    },
+    "containerWidthTitle": {
+        "message": "Ancho del contenedor de marcadores",
+        "description": "Título para la configuración del ancho del contenedor de marcadores"
+    },
+    "containerWidthDescription": {
+        "message": "Ajustar la proporción de ancho del contenedor de marcadores en la página",
+        "description": "Descripción de la configuración del ancho del contenedor de marcadores"
+    },
+    "donateTab": {
+        "message": "Apóyanos",
+        "description": "Donate tab name in settings"
+    },
+    "donateTitle": {
+        "message": "Apoya el Desarrollo de TabMark",
+        "description": "Title for donation section"
+    },
+    "donateDescription": {
+        "message": "Si encuentras útil TabMark, por favor considera apoyar su desarrollo continuo. Tu contribución nos ayuda a mejorar la extensión y añadir nuevas funciones.",
+        "description": "Description for donation section"
+    },
+    "wechatDonateTitle": {
+        "message": "WeChat Pay",
+        "description": "Title for WeChat donation option"
+    },
+    "paypalDonateTitle": {
+        "message": "PayPal",
+        "description": "Title for PayPal donation option"
+    },
+    "scanQRCodeToDonate": {
+        "message": "Escanea el código QR para donar",
+        "description": "Text for scanning QR code to donate"
+    },
+    "donateListLink": {
+        "message": "Ver lista de donaciones",
+        "description": "Link text to view donation list"
+    },
+    "donateWithPaypal": {
+        "message": "Donar con PayPal",
+        "description": "Text for PayPal donation button"
+    },
+    "thankYouForSupport": {
+        "message": "¡Gracias por tu apoyo!",
+        "description": "Thank you message for donations"
+    },
+    "bookmarksPerRow": {
+        "message": "$1 por fila",
+        "description": "Número de marcadores por fila"
+    },
+    "grokLabel": {
+        "message": "Grok",
+        "description": "Etiqueta del motor de búsqueda Grok"
+    },
+    "searchBoxDisplayTitle": {
+        "message": "Visualización del Cuadro de Búsqueda",
+        "description": "Título para la configuración de visualización del cuadro de búsqueda"
+    },
+    "shortcutsTab": {
+        "message": "Atajos",
+        "description": "Shortcuts settings tab name"
+    },
+    "shortcutsSettingsTitle": {
+        "message": "Configuración de Atajos",
+        "description": "Shortcuts settings title"
+    },
+    "shortcutsSettingsDescription": {
+        "message": "Personalizar atajos para acceso rápido",
+        "description": "Shortcuts settings description"
+    },
+    "sidebarShortcutName": {
+        "message": "Atajo de Barra Lateral",
+        "description": "Sidebar shortcut name"
+    },
+    "configureShortcuts": {
+        "message": "Configurar Atajos",
+        "description": "Configure shortcuts button text"
+    },
+    "shortcutValue": {
+        "message": "Predeterminado",
+        "description": "Default shortcut value"
+    },
+    "wheelSwitchingTab": {
+        "message": "Cambio con Rueda",
+        "description": "Wheel switching tab name in settings"
+    },
+    "wheelSwitchingSettingsTitle": {
+        "message": "Configuración de Cambio con Rueda",
+        "description": "Title for wheel switching settings"
+    },
+    "wheelSwitchingDescription": {
+        "message": "Cuando el cambio con rueda está habilitado, puede cambiar rápidamente entre carpetas fijadas desplazando la rueda del ratón en áreas fuera de la lista de marcadores en la página principal",
+        "description": "Description for wheel switching settings"
+    },
+    "enableWheelSwitching": {
+        "message": "Habilitar Cambio con Rueda",
+        "description": "Option to enable wheel switching feature"
+    },
+    "shortcutsFeature": {
+        "message": "Nuevas funciones:\n1. Personalización de atajos de barra lateral: Ahora puede personalizar el atajo para abrir o cerrar la barra lateral en la configuración de atajos de extensiones de Chrome\n2. En Configuración > Atajos, puede saltar rápidamente a la página de configuración de atajos de Chrome\n3. Control bidireccional: Presione el mismo atajo para abrir o cerrar la barra lateral para mayor comodidad\n\nFunciones de pestaña personalizada:\n1. Ahora puede personalizar el contenido mostrado en su página de inicio en la pestaña \"Configuración de Diseño\"\n2. Elija ocultar o mostrar el cuadro de búsqueda, mensaje de bienvenida y pie de página\n3. Personalice qué enlaces de acceso rápido se muestran\n4. Ajuste el ancho del contenedor de marcadores para su diseño preferido\n5. En \"Configuración de búsqueda\", puede elegir si mostrar sugerencias de historial y marcadores\n6. Se agregó una opción \"Apóyanos\" donde puede apoyar el desarrollo a través de WeChat si le gusta esta extensión",
+        "description": "Información sobre la función de personalización de atajos"
+    },
+    "wechatGroup": {
+        "message": "Grupo de WeChat",
+        "description": "Nombre del grupo de WeChat"
+    },
+    "feedbacks": {
+        "message": "Feedback",
+        "description": "Feedback link text"
+    },
+    "searchResultsOpeningTitle": {
+        "message": "Método de Apertura de Resultados de Búsqueda",
+        "description": "Título para la configuración del método de apertura de resultados de búsqueda"
+    },
+    "openSearchInNewTab": {
+        "message": "Abrir Resultados de Búsqueda en Nueva Pestaña",
+        "description": "Opción para abrir resultados de búsqueda en nueva pestaña"
+    },
+    "searchSuggestionsFeature": {
+        "message": "Actualización de la versión 1.121:\n1. Se corrigió la función de búsqueda en todos los motores: ahora la búsqueda con Cmd/Ctrl+Enter incluye el motor de búsqueda predeterminado\n2. Se agregó la configuración del método de apertura de resultados de búsqueda: elija abrir resultados en una nueva pestaña o en la página actual\n3. Se agregó la personalización de la altura de las tarjetas de marcadores: ajuste la altura de las tarjetas según su preferencia\n4. Se agregó una nueva configuración para abrir enlaces en el panel lateral: elija si los enlaces se abren en el panel lateral o en una nueva pestaña\n5. Se corrigieron múltiples problemas de interfaz para una mejor experiencia de usuario",
+        "description": "Información sobre las actualizaciones de la versión 1.121"
+    },
+    "bookmarkCardHeightTitle": {
+        "message": "Altura de Tarjeta de Marcador",
+        "description": "Título para la configuración de altura de tarjeta de marcador"
+    },
+    "bookmarkCardHeightValue": {
+        "message": "$1 píxeles",
+        "description": "Valor para la altura de tarjeta de marcador"
+    },
+    "bingWallpapersTitle": {
+        "message": "Fondos de Bing",
+        "description": "Título para los fondos de pantalla de Bing"
+    },
+    "presetWallpaperTitle": {
+        "message": "Fondos predefinidos",
+        "description": "Título para los fondos de pantalla predefinidos"
+    }
+}

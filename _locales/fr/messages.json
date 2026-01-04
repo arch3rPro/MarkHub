@@ -1,0 +1,776 @@
+{
+    "extName": {
+        "message": "Nouvel onglet",
+        "description": "Le nom de l'extension"
+    },
+    "extDescription": {
+        "message": "Une page de nouvel onglet pour organiser et accéder facilement à vos favoris.",
+        "description": "La description de l'extension"
+    },
+    "welcomeMessage": {
+        "message": "Bonjour",
+        "description": "Message de bienvenue affiché à l'utilisateur"
+    },
+    "searchPlaceholder": {
+        "message": "Rechercher ou entrer une adresse web",
+        "description": "Texte de l'espace réservé pour le champ de recherche"
+    },
+    "editDialogTitle": {
+        "message": "Modifier le lien rapide",
+        "description": "Titre de la boîte de dialogue de modification"
+    },
+    "editNameLabel": {
+        "message": "Nom :",
+        "description": "Étiquette pour le champ de saisie du nom dans la boîte de dialogue de modification"
+    },
+    "editUrlLabel": {
+        "message": "URL :",
+        "description": "Étiquette pour le champ de saisie de l'URL dans la boîte de dialogue de modification"
+    },
+    "folderLabel": {
+        "message": "Dossier :",
+        "description": "Étiquette pour le sélecteur de dossier dans la boîte de dialogue de modification"
+    },
+    "selectFolder": {
+        "message": "Sélectionner un dossier",
+        "description": "Option par défaut pour le sélecteur de dossier"
+    },
+    "saveButton": {
+        "message": "Enregistrer",
+        "description": "Texte pour le bouton d'enregistrement"
+    },
+    "cancelButton": {
+        "message": "Annuler",
+        "description": "Texte pour le bouton d'annulation"
+    },
+    "confirmDeleteMessage": {
+        "message": "Êtes-vous sûr de vouloir supprimer \"$1\" ?",
+        "description": "Message de confirmation pour la suppression d'un élément"
+    },
+    "confirmDeleteButton": {
+        "message": "Supprimer",
+        "description": "Texte pour le bouton de confirmation de suppression"
+    },
+    "openInNewTab": {
+        "message": "Ouvrir dans un nouvel onglet",
+        "description": "Option pour ouvrir les liens dans un nouvel onglet"
+    },
+    "openInNewWindow": {
+        "message": "Ouvrir dans une nouvelle fenêtre",
+        "description": "Élément de menu contextuel pour ouvrir le lien dans une nouvelle fenêtre"
+    },
+    "openInIncognito": {
+        "message": "Ouvrir dans une fenêtre de navigation privée",
+        "description": "Élément de menu contextuel pour ouvrir le lien dans une fenêtre de navigation privée"
+    },
+    "editQuickLink": {
+        "message": "Modifier",
+        "description": "Élément de menu contextuel pour modifier le lien rapide"
+    },
+    "deleteQuickLink": {
+        "message": "Supprimer",
+        "description": "Élément de menu contextuel pour supprimer le lien rapide"
+    },
+    "copyLink": {
+        "message": "Copier le lien",
+        "description": "Élément de menu contextuel pour copier le lien"
+    },
+    "createQRCode": {
+        "message": "Créer un code QR",
+        "description": "Élément de menu contextuel pour créer un code QR"
+    },
+    "confirmDeleteBookmark": {
+        "message": "Êtes-vous sûr de vouloir supprimer le favori \"$1\" ?",
+        "description": "Message de confirmation pour la suppression d'un favori"
+    },
+    "rename": {
+        "message": "Renommer",
+        "description": "Option pour renommer un élément"
+    },
+    "delete": {
+        "message": "Supprimer",
+        "description": "Option pour supprimer un élément"
+    },
+    "setAsHomepage": {
+        "message": "Définir comme page d'accueil",
+        "description": "Option pour définir une page comme page d'accueil"
+    },
+    "confirmDeleteFolder": {
+        "message": "Êtes-vous sûr de vouloir supprimer le dossier \"$1\" ?",
+        "description": "Message de confirmation pour la suppression d'un dossier"
+    },
+    "categoryDeleted": {
+        "message": "Catégorie supprimée",
+        "description": "Message de notification lorsque une catégorie est supprimée"
+    },
+    "searchEngineIconNotFound": {
+        "message": "Icône du moteur de recherche introuvable",
+        "description": "Message d'erreur lorsque l'icône du moteur de recherche est introuvable"
+    },
+    "folderDeleted": {
+        "message": "Dossier supprimé : ID=$1, Titre=$2",
+        "description": "Message de journal lorsque un dossier est supprimé"
+    },
+    "morningGreeting": {
+        "message": "Bonjour👋",
+        "description": "Message de salutation du matin"
+    },
+    "afternoonGreeting": {
+        "message": "Bon après-midi👋",
+        "description": "Message de salutation de l'après-midi"
+    },
+    "eveningGreeting": {
+        "message": "Bonsoir👋",
+        "description": "Message de salutation du soir"
+    },
+    "linkCopied": {
+        "message": "Lien copié dans le presse-papiers",
+        "description": "Message toast lorsque un lien est copié avec succès"
+    },
+    "copyLinkFailed": {
+        "message": "Échec de la copie du lien",
+        "description": "Message toast lorsque la copie d'un lien échoue"
+    },
+    "invalidBookmark": {
+        "message": "Favori ou URL invalide",
+        "description": "Message toast lorsque vous essayez de copier un favori invalide"
+    },
+    "download": {
+        "message": "Télécharger",
+        "description": "Texte pour le bouton de téléchargement"
+    },
+    "copied": {
+        "message": "Copié",
+        "description": "Texte affiché après qu'un lien est copié"
+    },
+    "confirmDeleteTitle": {
+        "message": "Confirmer la suppression",
+        "description": "Titre de la boîte de dialogue de confirmation de suppression"
+    },
+    "scanQRCode": {
+        "message": "Scanner le code QR",
+        "description": "Titre pour la fenêtre modale du code QR"
+    },
+    "renameFolderTitle": {
+        "message": "Renommer le dossier",
+        "description": "Titre de la boîte de dialogue de renommage du dossier"
+    },
+    "doubaoTab": {
+        "message": "Doubao",
+        "description": "Onglet du moteur de recherche Doubao"
+    },
+    "metasoTab": {
+        "message": "Metaso",
+        "description": "Onglet du moteur de recherche Metaso"
+    },
+    "nameLabel": {
+        "message": "Nom",
+        "description": "Étiquette du nom"
+    },
+    "moreSearchSupportToast": {
+        "message": "Plus de support de recherche bientôt disponible",
+        "description": "Toast pour plus de support de recherche"
+    },
+    "settingsTitle": {
+        "message": "Paramètres",
+        "description": "Titre des paramètres"
+    },
+    "appearanceTab": {
+        "message": "Apparence",
+        "description": "Onglet des paramètres d'apparence"
+    },
+    "floatingBallTab": {
+        "message": "Boule flottante",
+        "description": "Onglet des paramètres de la boule flottante"
+    },
+    "backgroundColorTitle": {
+        "message": "Couleur de fond",
+        "description": "Titre des paramètres de la couleur de fond"
+    },
+    "floatingBallSettingsTitle": {
+        "message": "Paramètres de la boule flottante",
+        "description": "Titre des paramètres de la boule flottante"
+    },
+    "floatingBallDescription": {
+        "message": "Lorsqu'elle est activée, une icône flottante cliquable apparaîtra dans le coin supérieur droit de la page pour un accès rapide aux moteurs de recherche et aux favoris.",
+        "description": "Description de la fonctionnalité de la boule flottante"
+    },
+    "enableFloatingBall": {
+        "message": "Activer la boule flottante",
+        "description": "Option pour activer la boule flottante"
+    },
+    "historyLinkTitle": {
+        "message": "Historique",
+        "description": "Titre du lien de l'historique"
+    },
+    "downloadsLinkTitle": {
+        "message": "Téléchargements",
+        "description": "Titre du lien des téléchargements"
+    },
+    "passwordsLinkTitle": {
+        "message": "Mots de passe",
+        "description": "Titre du lien des mots de passe"
+    },
+    "extensionsLinkTitle": {
+        "message": "Extensions",
+        "description": "Titre du lien des extensions"
+    },
+    "settingsLinkTitle": {
+        "message": "Paramètres",
+        "description": "Titre du lien des paramètres"
+    },
+    "confirmDeleteQuickLinkMessage": {
+        "message": "Êtes-vous sûr de vouloir supprimer le lien rapide \"$1\" ? Ce lien ne sera plus visible dans la liste des liens rapides.",
+        "description": "Message de confirmation pour la suppression d'un lien rapide"
+    },
+    "yearProgress": {
+        "message": "Progression annuelle",
+        "description": "Progression annuelle affichée"
+    },
+    "searchTips": {
+        "message": "Utiliser cette fois:",
+        "description": "Texte des conseils de recherche"
+    },
+    "baiduTab": {
+        "message": "Baidu",
+        "description": "Onglet du moteur de recherche Baidu"
+    },
+    "searchEngineUpdateTip": {
+        "message": "La fonction de changement de moteur de recherche a été mise à jour",
+        "description": "Notification de mise à jour de la fonction de moteur de recherche"
+    },
+    "searchEngineUpdateDetail": {
+        "message": "Cliquez sur l'icône de recherche pour définir le moteur de recherche par défaut, prend en charge les moteurs de recherche personnalisés, utilisez la barre d'onglets pour un changement temporaire",
+        "description": "Détails sur la fonction de changement de moteur de recherche"
+    },
+    "googleLabel": {
+        "message": "Google",
+        "description": "Label du moteur de recherche Google"
+    },
+    "bingLabel": {
+        "message": "Bing",
+        "description": "Label du moteur de recherche Bing"
+    },
+    "baiduLabel": {
+        "message": "Baidu",
+        "description": "Label du moteur de recherche Baidu"
+    },
+    "kimiLabel": {
+        "message": "Kimi",
+        "description": "Label du moteur de recherche Kimi"
+    },
+    "doubaoLabel": {
+        "message": "Doubao",
+        "description": "Label du moteur de recherche Doubao"
+    },
+    "chatgptLabel": {
+        "message": "ChatGPT",
+        "description": "Label du moteur de recherche ChatGPT"
+    },
+    "feloLabel": {
+        "message": "Felo",
+        "description": "Label du moteur de recherche Felo"
+    },
+    "metasoLabel": {
+        "message": "Metaso",
+        "description": "Label du moteur de recherche Metaso"
+    },
+    "backgroundTitle": {
+        "message": "Paramètres de fond",
+        "description": "Titre des paramètres de fond"
+    },
+    "resetWallpaper": {
+        "message": "Réinitialiser le fond",
+        "description": "Texte du bouton de réinitialisation du fond d'écran"
+    },
+    "uploadWallpaper": {
+        "message": "Télécharger un fond",
+        "description": "Texte du bouton de téléchargement du fond d'écran"
+    },
+    "wallpaperResetSuccess": {
+        "message": "Fond réinitialisé par défaut",
+        "description": "Message de succès de réinitialisation du fond d'écran"
+    },
+    "solidBackgroundTitle": {
+        "message": "Couleur unie",
+        "description": "Titre des paramètres de couleur unie"
+    },
+    "wallpaperTitle": {
+        "message": "Fond d'écran",
+        "description": "Titre des paramètres de fond d'écran"
+    },
+    "uploadedWallpaperBadge": {
+        "message": "Local",
+        "description": "Texte du badge pour le fond d'écran téléchargé par l'utilisateur"
+    },
+    "aboutTab": {
+        "message": "À propos",
+        "description": "Onglet À propos"
+    },
+    "aboutTitle": {
+        "message": "À propos de TabMark",
+        "description": "Titre de la page À propos"
+    },
+    "contactUs": {
+        "message": "Contactez-nous",
+        "description": "Lien de contact"
+    },
+    "version": {
+        "message": "Version $1",
+        "description": "Le numéro de version de l'application"
+    },
+    "officialWebsite": {
+        "message": "Site Officiel",
+        "description": "Texte du lien du site officiel"
+    },
+    "feedback": {
+        "message": "Email",
+        "description": "Texte du lien de retour"
+    },
+    "settingsUpdateTip": {
+        "message": "Vous pouvez configurer ici la couleur d'arrière-plan, le fond d'écran, la boule flottante, les sites recommandés, la méthode d'ouverture des liens, nettoyer les favoris invalides...",
+        "description": "Conseil de mise à jour des paramètres"
+    },
+    "deleteSuccess": {
+        "message": "Suppression réussie",
+        "description": "Message toast lors de la suppression réussie d'un élément"
+    },
+    "quickLinksTab": {
+        "message": "Sites Recommandés",
+        "description": "Onglet des sites recommandés"
+    },
+    "quickLinksSettings": {
+        "message": "Paramètres des Sites Recommandés",
+        "description": "Paramètres des sites recommandés"
+    },
+    "quickLinksDescription": {
+        "message": "Lorsqu'activé, vos sites les plus visités seront affichés sous la barre de recherche pour un accès rapide. La liste des recommandations se met à jour automatiquement lorsque vous visitez de nouveaux sites.",
+        "description": "Description des sites recommandés"
+    },
+    "enableQuickLinks": {
+        "message": "Activer les Sites Recommandés",
+        "description": "Option pour activer les sites recommandés"
+    },
+    "namePrompt": {
+        "message": "Comment souhaitez-vous être appelé ?",
+        "description": "Message demandant le nom de l'utilisateur"
+    },
+    "openAllBookmarks": {
+        "message": "Ouvrir tous les favoris",
+        "description": "Ouvre tous les favoris dans le dossier"
+    },
+    "bookmarkCleanupTitle": {
+        "message": "Nettoyage des favoris",
+        "description": "Titre du lien de nettoyage des favoris"
+    },
+    "bookmarkCleanupNotInstalled": {
+        "message": "L'extension de nettoyage des favoris n'est pas installée. Voulez-vous l'installer depuis le Chrome Web Store ?",
+        "description": "Invite à installer l'extension de nettoyage des favoris"
+    },
+    "newFeatureTitle": {
+        "message": "Conseils sur les nouvelles fonctionnalités",
+        "description": "Titre des conseils sur les nouvelles fonctionnalités"
+    },
+    "bookmarkCleanupFeature": {
+        "message": "Nouvelle fonction de nettoyage des favoris : Cliquez sur l'icône des paramètres dans la barre latérale, installez l'extension de nettoyage des favoris pour nettoyer facilement les favoris en double et invalides, et voir vos statistiques de favoris.",
+        "description": "Information sur la fonction de nettoyage des favoris"
+    },
+    "bookmarkManagementTab": {
+        "message": "Gestion des favoris",
+        "description": "Nom de l'onglet de gestion des favoris"
+    },
+    "bookmarkCleanupSettingsTitle": {
+        "message": "Nettoyage et Statistiques des Favoris",
+        "description": "Titre des paramètres de nettoyage des favoris"
+    },
+    "bookmarkCleanupSettingsDescription": {
+        "message": "Nettoyez les favoris en double et invalides, consultez les statistiques d'utilisation des favoris pour mieux gérer vos favoris.",
+        "description": "Description de la fonction de nettoyage des favoris"
+    },
+    "openBookmarkCleanup": {
+        "message": "Ouvrir l'Outil de Nettoyage des Favoris",
+        "description": "Texte du bouton pour ouvrir l'outil de nettoyage des favoris"
+    },
+    "floatingBallClickTip": {
+        "message": "Clic",
+        "description": "Conseil de clic sur la boule flottante"
+    },
+    "floatingBallClickDesc": {
+        "message": "Ouvrir la recherche rapide",
+        "description": "Description de la fonction de clic sur la boule flottante"
+    },
+    "floatingBallAltClickTip": {
+        "message": "Alt + Clic",
+        "description": "Conseil d'Alt+clic sur la boule flottante"
+    },
+    "floatingBallAltClickDesc": {
+        "message": "Ouvrir le panneau latéral",
+        "description": "Description de la fonction Alt+clic sur la boule flottante"
+    },
+    "floatingBallShortcutTip": {
+        "message": "Alt/Command + B",
+        "description": "Conseil de raccourci de la boule flottante"
+    },
+    "floatingBallShortcutDesc": {
+        "message": "Raccourci pour ouvrir le panneau latéral",
+        "description": "Description de la fonction de raccourci de la boule flottante"
+    },
+    "doNotShowAgain": {
+        "message": "Ne plus afficher",
+        "description": "Texte du bouton pour fermer l'infobulle"
+    },
+    "linkOpeningTab": {
+        "message": "Ouverture des Liens",
+        "description": "Onglet des paramètres d'ouverture des liens"
+    },
+    "linkOpeningSettingsTitle": {
+        "message": "Paramètres d'Ouverture des Liens",
+        "description": "Titre des paramètres d'ouverture des liens"
+    },
+    "linkOpeningDescription": {
+        "message": "Définissez comment les favoris et les liens rapides s'ouvrent lorsqu'ils sont cliqués sur la page principale.",
+        "description": "Description des paramètres d'ouverture des liens"
+    },
+    "sidePanelLinkOpeningTitle": {
+        "message": "Ouverture des Liens dans le Panneau Latéral",
+        "description": "Titre des paramètres d'ouverture des liens dans le panneau latéral"
+    },
+    "sidePanelLinkOpeningDescription": {
+        "message": "Configurez comment les favoris et les liens rapides s'ouvrent lorsqu'ils sont cliqués dans le panneau latéral",
+        "description": "Description des paramètres d'ouverture des liens dans le panneau latéral"
+    },
+    "sidePanelOpenInNewTab": {
+        "message": "Ouvrir dans un nouvel onglet",
+        "description": "Option pour ouvrir les liens dans un nouvel onglet quand cliqués dans le panneau latéral"
+    },
+    "sidePanelOpenInSidepanel": {
+        "message": "Ouvrir dans le panneau latéral",
+        "description": "Option pour ouvrir les liens à l'intérieur du panneau latéral"
+    },
+    "sidebarFeaturesFeature": {
+        "message": "Deux nouvelles fonctionnalités ajoutées :\n1. Barre latérale rapide :\nAppuyez sur Alt/Command + B sur n'importe quelle page web pour ouvrir la barre latérale et accéder rapidement aux favoris et aux fonctions de recherche.\n\n2. Paramètres d'ouverture des liens :\nPersonnalisez la façon dont les favoris et les liens rapides s'ouvrent dans les paramètres, avec l'option de les ouvrir dans de nouveaux onglets.",
+        "description": "Conseil unifié pour la recherche dans la barre latérale et les fonctions d'ouverture des liens"
+    },
+    "addSearchEngine": {
+        "message": "Ajouter",
+        "description": "Texte du bouton d'ajout de moteur de recherche"
+    },
+    "searchEnginesTitle": {
+        "message": "Paramètres des Moteurs de Recherche",
+        "description": "Titre des paramètres des moteurs de recherche"
+    },
+    "aiSearchEnginesTitle": {
+        "message": "Recherche IA",
+        "description": "Titre de la catégorie des moteurs de recherche IA"
+    },
+    "generalSearchEnginesTitle": {
+        "message": "Recherche Générale",
+        "description": "Titre de la catégorie des moteurs de recherche généraux"
+    },
+    "socialSearchEnginesTitle": {
+        "message": "Réseaux Sociaux",
+        "description": "Titre de la catégorie de recherche sur les réseaux sociaux"
+    },
+    "customSearchEnginesTitle": {
+        "message": "Moteurs de Recherche Personnalisés",
+        "description": "Titre de la catégorie des moteurs de recherche personnalisés"
+    },
+    "searchEngineNamePlaceholder": {
+        "message": "Nom du moteur de recherche",
+        "description": "Texte indicatif pour le nom du moteur de recherche"
+    },
+    "searchEngineUrlPlaceholder": {
+        "message": "URL de recherche (utilisez %s comme espace réservé)",
+        "description": "Texte indicatif pour l'URL du moteur de recherche"
+    },
+    "searchEngineIconPlaceholder": {
+        "message": "URL de l'icône (optionnel, sera récupérée automatiquement si vide)",
+        "description": "Texte indicatif pour l'icône du moteur de recherche"
+    },
+    "searchEngineAddSuccess": {
+        "message": "Moteur de recherche ajouté avec succès",
+        "description": "Message de succès pour l'ajout d'un moteur de recherche"
+    },
+    "searchEngineAddError": {
+        "message": "Échec de l'ajout du moteur de recherche, veuillez réessayer",
+        "description": "Message d'erreur pour l'ajout d'un moteur de recherche"
+    },
+    "searchEngineDeleteConfirm": {
+        "message": "Êtes-vous sûr de vouloir supprimer ce moteur de recherche ?",
+        "description": "Message de confirmation pour la suppression d'un moteur de recherche"
+    },
+    "searchEngineNameRequired": {
+        "message": "Veuillez entrer le nom du moteur de recherche",
+        "description": "Message obligatoire pour le nom du moteur de recherche"
+    },
+    "searchEngineUrlRequired": {
+        "message": "Veuillez entrer l'URL du moteur de recherche",
+        "description": "Message obligatoire pour l'URL du moteur de recherche"
+    },
+    "searchEngineUrlInvalid": {
+        "message": "Veuillez entrer une URL valide avec %s comme espace réservé",
+        "description": "Message de format invalide pour l'URL du moteur de recherche"
+    },
+    "searchEngineUpdateFeature": {
+        "message": "La fonction de changement de moteur de recherche a été mise à jour :\n1. Cliquez sur l'icône de recherche pour définir le moteur de recherche par défaut\n2. Prise en charge des moteurs de recherche personnalisés\n3. Utilisez la barre d'onglets pour changer temporairement la recherche en cours",
+        "description": "Détails de la mise à jour de la fonction de changement de moteur de recherche"
+    },
+    "layoutTab": {
+        "message": "Mise en page",
+        "description": "Nom de l'onglet des paramètres de mise en page"
+    },
+    "layoutSettingsTitle": {
+        "message": "Paramètres de mise en page",
+        "description": "Titre des paramètres de mise en page"
+    },
+    "layoutSettingsDescription": {
+        "message": "Personnaliser l'affichage des éléments d'interface",
+        "description": "Description des paramètres de mise en page"
+    },
+    "bookmarkManagementTitle": {
+        "message": "Gestion des favoris",
+        "description": "Titre de la gestion des favoris"
+    },
+    "bookmarkManagementDescription": {
+        "message": "Personnaliser l'affichage et le comportement des favoris",
+        "description": "Description de la gestion des favoris"
+    },
+    "bookmarkWidthTitle": {
+        "message": "Réglage de la largeur des favoris",
+        "description": "Titre pour les réglages de largeur des favoris"
+    },
+    "previewText": {
+        "message": "Favoris par ligne :",
+        "description": "Texte pour l'aperçu de la largeur des favoris"
+    },
+    "bookmarkHeightTitle": {
+        "message": "Hauteur des cartes de favoris",
+        "description": "Titre pour les réglages de hauteur des cartes de favoris"
+    },
+    "heightPreviewText": {
+        "message": "Ajuster la hauteur des cartes de favoris",
+        "description": "Texte pour l'aperçu de la hauteur des favoris"
+    },
+    "themeTitle": {
+        "message": "Paramètres du thème",
+        "description": "Titre des paramètres du thème"
+    },
+    "lightTheme": {
+        "message": "Clair",
+        "description": "Option de thème clair"
+    },
+    "darkTheme": {
+        "message": "Sombre",
+        "description": "Option de thème sombre"
+    },
+    "autoTheme": {
+        "message": "Suivre système",
+        "description": "Option de suivre le thème système"
+    },
+    "interfaceElementsTitle": {
+        "message": "Affichage des Éléments d'Interface",
+        "description": "Titre des paramètres d'affichage des éléments d'interface"
+    },
+    "showSearchBox": {
+        "message": "Afficher la Barre de Recherche",
+        "description": "Option pour afficher la barre de recherche"
+    },
+    "showWelcomeMessage": {
+        "message": "Afficher le Message de Bienvenue",
+        "description": "Option pour afficher le message de bienvenue"
+    },
+    "showFooter": {
+        "message": "Afficher le Pied de Page",
+        "description": "Option pour afficher le pied de page"
+    },    "showFolderIcons": {
+        "message": "Afficher les icônes de dossier",
+        "description": "Option pour afficher les icônes de dossier dans la barre latérale gauche"
+    },    "quickAccessLinksTitle": {
+        "message": "Liens d'Accès Rapide",
+        "description": "Titre des paramètres des liens d'accès rapide"
+    },
+    "showHistoryLink": {
+        "message": "Afficher l'Historique",
+        "description": "Option pour afficher le lien de l'historique"
+    },
+    "showDownloadsLink": {
+        "message": "Afficher les Téléchargements",
+        "description": "Option pour afficher le lien des téléchargements"
+    },
+    "showPasswordsLink": {
+        "message": "Afficher les Mots de Passe",
+        "description": "Option pour afficher le lien des mots de passe"
+    },
+    "showBookmarksLink": {
+        "message": "Afficher le Gestionnaire de Signets",
+        "description": "Option de lien du gestionnaire de signets"
+    },
+    "bookmarksLinkTitle": {
+        "message": "Gestionnaire de Signets",
+        "description": "Titre du lien du gestionnaire de signets"
+    },
+    "showExtensionsLink": {
+        "message": "Afficher les Extensions",
+        "description": "Option pour afficher le lien des extensions"
+    },
+    "searchTab": {
+        "message": "Recherche",
+        "description": "Nom de l'onglet des paramètres de recherche"
+    },
+    "searchSettingsTitle": {
+        "message": "Paramètres de recherche",
+        "description": "Titre de la page des paramètres de recherche"
+    },
+    "searchSettingsDescription": {
+        "message": "Personnaliser l'affichage et le comportement des suggestions de recherche",
+        "description": "Description de la page des paramètres de recherche"
+    },
+    "searchSuggestionsTitle": {
+        "message": "Paramètres des suggestions de recherche",
+        "description": "Titre des paramètres des suggestions de recherche"
+    },
+    "showHistorySuggestions": {
+        "message": "Afficher les suggestions d'historique",
+        "description": "Option pour afficher les suggestions d'historique"
+    },
+    "showBookmarkSuggestions": {
+        "message": "Afficher les suggestions de favoris",
+        "description": "Option pour afficher les suggestions de favoris"
+    },
+    "containerWidthTitle": {
+        "message": "Largeur du conteneur de favoris",
+        "description": "Titre des paramètres de largeur du conteneur de favoris"
+    },
+    "containerWidthDescription": {
+        "message": "Ajuster la largeur du conteneur de favoris dans la page",
+        "description": "Description des paramètres de largeur du conteneur de favoris"
+    },
+    "donateTab": {
+        "message": "Faire un don",
+        "description": "Donate tab name in settings"
+    },
+    "donateTitle": {
+        "message": "Soutenez le Développement de TabMark",
+        "description": "Title for donation section"
+    },
+    "donateDescription": {
+        "message": "Si vous trouvez TabMark utile, veuillez envisager de soutenir son développement continu. Votre contribution nous aide à améliorer l'extension et à ajouter de nouvelles fonctionnalités.",
+        "description": "Description for donation section"
+    },
+    "wechatDonateTitle": {
+        "message": "WeChat Pay",
+        "description": "Title for WeChat donation option"
+    },
+    "paypalDonateTitle": {
+        "message": "PayPal",
+        "description": "Title for PayPal donation option"
+    },
+    "scanQRCodeToDonate": {
+        "message": "Scannez le code QR pour faire un don",
+        "description": "Text for scanning QR code to donate"
+    },
+    "donateListLink": {
+        "message": "Voir la liste des donateurs",
+        "description": "Link text to view donation list"
+    },
+    "donateWithPaypal": {
+        "message": "Faire un don avec PayPal",
+        "description": "Text for PayPal donation button"
+    },
+    "thankYouForSupport": {
+        "message": "Merci pour votre soutien !",
+        "description": "Thank you message for donations"
+    },
+    "bookmarksPerRow": {
+        "message": "$1 par ligne",
+        "description": "Nombre de favoris par ligne"
+    },
+    "grokLabel": {
+        "message": "Grok",
+        "description": "Label du moteur de recherche Grok"
+    },
+    "searchBoxDisplayTitle": {
+        "message": "検索ボックスの表示",
+        "description": "検索ボックス表示設定のタイトル"
+    },
+    "shortcutsTab": {
+        "message": "Raccourcis",
+        "description": "Shortcuts settings tab name"
+    },
+    "shortcutsSettingsTitle": {
+        "message": "Paramètres des raccourcis",
+        "description": "Shortcuts settings title"
+    },
+    "shortcutsSettingsDescription": {
+        "message": "Personnaliser les raccourcis pour un accès rapide",
+        "description": "Shortcuts settings description"
+    },
+    "sidebarShortcutName": {
+        "message": "Raccourci de la barre latérale",
+        "description": "Sidebar shortcut name"
+    },
+    "configureShortcuts": {
+        "message": "Configurer les raccourcis",
+        "description": "Configure shortcuts button text"
+    },
+    "shortcutValue": {
+        "message": "Par défaut",
+        "description": "Default shortcut value"
+    },
+    "wheelSwitchingTab": {
+        "message": "Changement par Molette",
+        "description": "Wheel switching tab name in settings"
+    },
+    "wheelSwitchingSettingsTitle": {
+        "message": "Paramètres de Changement par Molette",
+        "description": "Title for wheel switching settings"
+    },
+    "wheelSwitchingDescription": {
+        "message": "Lorsque le changement par molette est activé, vous pouvez rapidement basculer entre les dossiers épinglés en faisant défiler la molette de la souris dans les zones en dehors de la liste de signets sur la page principale",
+        "description": "Description for wheel switching settings"
+    },
+    "enableWheelSwitching": {
+        "message": "Activer le Changement par Molette",
+        "description": "Option to enable wheel switching feature"
+    },
+    "shortcutsFeature": {
+        "message": "Nouvelles fonctionnalités :\n1. Personnalisation des raccourcis de la barre latérale : Vous pouvez maintenant personnaliser le raccourci pour ouvrir ou fermer la barre latérale dans les paramètres de raccourcis des extensions Chrome\n2. Dans Paramètres > Raccourcis, vous pouvez accéder rapidement à la page de paramètres des raccourcis Chrome\n3. Contrôle bidirectionnel : Appuyez sur le même raccourci pour ouvrir ou fermer la barre latérale pour plus de commodité\n\nFonctionnalités de l'onglet personnalisé :\n1. Vous pouvez maintenant personnaliser le contenu affiché sur votre page d'accueil dans l'onglet \"Mise en page\"\n2. Choisissez de masquer ou d'afficher la barre de recherche, le message de bienvenue et le pied de page\n3. Personnalisez les liens d'accès rapide affichés\n4. Ajustez la largeur du conteneur de favoris pour votre mise en page préférée\n5. Dans \"Paramètres de recherche\", vous pouvez choisir d'afficher ou non les suggestions d'historique et de favoris\n6. Ajout d'une option \"Faire un don\" où vous pouvez soutenir le développement via WeChat si vous aimez cette extension",
+        "description": "Informations sur la fonction de personnalisation des raccourcis"
+    },
+    "wechatGroup": {
+        "message": "Groupe WeChat",
+        "description": "Nom du groupe WeChat"
+    },
+    "feedbacks": {
+        "message": "Feedback",
+        "description": "Feedback link text"
+    },
+    "searchResultsOpeningTitle": {
+        "message": "Méthode d'Ouverture des Résultats de Recherche",
+        "description": "Titre pour les paramètres de méthode d'ouverture des résultats de recherche"
+    },
+    "openSearchInNewTab": {
+        "message": "Ouvrir les Résultats de Recherche dans un Nouvel Onglet",
+        "description": "Option pour ouvrir les résultats de recherche dans un nouvel onglet"
+    },
+    "searchSuggestionsFeature": {
+        "message": "Mise à jour de la version 1.121 :\n1. Correction de la fonction de recherche sur tous les moteurs : La recherche avec Cmd/Ctrl+Enter inclut maintenant le moteur de recherche par défaut\n2. Ajout de la configuration du mode d'ouverture des résultats de recherche : choisissez d'ouvrir les résultats dans un nouvel onglet ou sur la page actuelle\n3. Ajout de la personnalisation de la hauteur des cartes de favoris : ajustez la hauteur des cartes selon vos préférences\n4. Ajout d'une nouvelle configuration pour ouvrir les liens dans le panneau latéral : choisissez si les liens s'ouvrent dans le panneau latéral ou dans un nouvel onglet\n5. Correction de plusieurs problèmes d'interface pour une meilleure expérience utilisateur",
+        "description": "Informations sur les mises à jour de la version 1.121"
+    },
+    "bookmarkCardHeightTitle": {
+        "message": "Hauteur des Cartes de Favoris",
+        "description": "Titre pour les paramètres de hauteur des cartes de favoris"
+    },
+    "bookmarkCardHeightValue": {
+        "message": "$1 pixels",
+        "description": "Valeur pour la hauteur des cartes de favoris"
+    },
+    "bingWallpapersTitle": {
+        "message": "Fonds d'écran Bing",
+        "description": "Titre pour les fonds d'écran Bing"
+    },
+    "presetWallpaperTitle": {
+        "message": "Fonds d'écran prédéfinis",
+        "description": "Titre pour les fonds d'écran prédéfinis"
+    }
+}

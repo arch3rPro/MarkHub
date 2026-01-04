@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en" class="loading-wallpaper">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="extName">__MSG_extName__</title>
+  <link href="output.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <link href="sidepanel.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <style id="dynamic-background"></style>
+  <script src="localization.js"></script>
+  <script src="lodash.min.js"></script>
+  <script type="module" src="welcome.js"></script>
+  <script type="module" src="script.js"></script>
+  <script src="wallpaper.js" defer></script>
+  <script type="module" src="icons.js"></script>
+  <script type="module" src="feature-tips.js"></script>
+  <script type="module" src="settings.js"></script>
+  <script type="module" src="search-engine-dropdown.js"></script>
+  <script src="sidepanel-manager.js"></script>
+  <style>
+    /* 确保在侧边栏模式下立即隐藏页脚和欢迎语 */
+    @media (max-width: 480px),
+    (max-height: 600px),
+    (min-width: 100px) {
+      footer {
+        display: none !important;
+      }
+  
+      /* 隐藏欢迎语 */
+      #welcome-message,
+      .welcome-search-container {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+  
+      /* 调整搜索容器位置 */
+      .search-container {
+        margin-top: 2rem !important;
+        margin-bottom: 1rem !important;
+      }
+  
+      /* 确保书签容器宽度为100% */
+      .bookmarks-container {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+  
+      /* 确保主容器宽度为100% */
+      main {
+        width: 100% !important;
+      }
+  
+      /* 确保书签列表宽度为100% */
+      #bookmarks-list {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+    }
+  
+    /* 当URL包含side_panel参数时隐藏页脚和欢迎语并调整宽度 */
+    html:has(body.is-sidepanel) footer,
+    html:has(body.is-sidepanel) #welcome-message,
+    html:has(body.is-sidepanel) .welcome-search-container {
+      display: none !important;
+    }
+  
+    html:has(body.is-sidepanel) .bookmarks-container {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  
+    html:has(body.is-sidepanel) .search-container {
+      margin-top: 2rem !important;
+      margin-bottom: 1rem !important;
+    }
+  </style>
+</head>
+
+<body class="h-screen flex flex-col">
+  <div id="sidebar-container" class="flex collapsed">
+    <aside class="custom-width p-4 overflow-auto border-r border-gray-200 relative">
+      <div id="sidebar-logo" class="mb-4">
+        <img src="../images/logo.svg" alt="Logo" id="logo-image">
+        <h1 id="logo-title">MarkHub</h1>
+      </div>
+      <ul id="categories-list" class="space-y-2"></ul>
+    </aside>
+    <main class="flex-1 bg-gray-50 p-8 overflow-auto flex flex-col">
+      <div class="welcome-search-container">
+        <div id="welcome-message" data-i18n="welcomeMessage" style="visibility: hidden;"></div>
+      </div>
+      <div class="flex justify-between items-center mb-4">
+        <div class="search-container">
+          <form class="search-form" id="search-form">
+            <div style="position: relative;height: auto;">
+              <div class="search-icon-container">
+                <img id="search-engine-icon" src="../images/placeholder-icon.svg" alt="search-engine-icon"
+                  class="search-engine-icon">
+                <span class="dropdown-indicator">▼</span>
+              </div>
+              <textarea class="search-input" data-i18n-placeholder="searchPlaceholder" rows="1"
+                style="width: 100%; resize: none; padding-left: 40px;"></textarea>
+            </div>
+            <div class="search-suggestions-wrapper">
+              <div class="line-container" id="line-container">
+                <hr class="custom-hr">
+              </div>
+              <ul id="search-suggestions" class="search-suggestions"></ul>
+              <div id="tabs-container" class="tabs">
+                <span data-i18n="searchTips" class="search-tips">本次使用</span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="quick-links-wrapper">
+        <div id="quick-links" class="quick-links-container">
+          <!-- 占位符将由JavaScript动态生成 -->
+        </div>
+      </div>
+      <div class="bookmarks-container">
+        <div id="folder-name" class="folder-name">
+        </div>
+        <div class="flex flex-wrap gap-4 justify-center flex-grow" id="bookmarks-list">
+          <!-- 添加占位符 -->
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+          <div class="bookmark-placeholder"></div>
+
+          <!-- 可以根据需要添加更多占位符 -->
+        </div>
+      </div>
+      <!-- 添加默认文件夹切换区域 -->
+      <div class="default-folders-tabs">
+        <div class="tabs-container">
+          <!-- 文件夹标签将通过JS动态生成 -->
+        </div>
+      </div>
+      <!-- Edit Bookmark Dialog -->
+      <div id="edit-bookmark-dialog" class="modal">
+        <div class="modal-content">
+          <span class="close-bookmark-button">&times;</span>
+          <h2 data-i18n="editBookmarkTitle"></h2>
+          <form id="edit-bookmark-form">
+            <label for="edit-bookmark-name" data-i18n="editNameLabel"></label>
+            <div class="input-with-icon">
+              <div class="input-icon-wrapper">
+                <span class="material-icons">title</span>
+              </div>
+              <input type="text" id="edit-bookmark-name" name="name" required>
+            </div>
+            <label for="edit-bookmark-url" data-i18n="editUrlLabel"></label>
+            <div class="input-with-icon">
+              <div class="input-icon-wrapper">
+                <span class="material-icons">link</span>
+              </div>
+              <input type="url" id="edit-bookmark-url" name="url" required>
+            </div>
+            <label for="edit-bookmark-folder" data-i18n="folderLabel"></label>
+            <div class="folder-tree-selector" id="edit-bookmark-folder">
+              <div class="folder-selected-display" data-placeholder-i18n="selectFolder">
+                <span class="material-icons folder-display-icon">folder</span>
+                <span class="selected-folder-name" data-i18n="selectFolder"></span>
+                <span class="material-icons dropdown-arrow">expand_more</span>
+              </div>
+              <div class="folder-tree-dropdown" style="display: none;">
+                <div class="folder-tree-list" id="folder-tree-list"></div>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="cancel-bookmark-button" data-i18n="cancelButton"></button>
+              <button type="submit" data-i18n="saveButton"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Edit Quick Link Dialog -->
+      <div id="edit-quicklink-dialog" class="modal">
+        <div class="modal-content">
+          <span class="close-quicklink-button">&times;</span>
+          <h2 data-i18n="editDialogTitle"></h2>
+          <form id="edit-quicklink-form">
+            <label for="edit-quicklink-name" data-i18n="editNameLabel"></label>
+            <div class="input-with-icon">
+              <div class="input-icon-wrapper">
+                <span class="material-icons">title</span>
+              </div>
+              <input type="text" id="edit-quicklink-name" name="name" required>
+            </div>
+            <label for="edit-quicklink-url" data-i18n="editUrlLabel"></label>
+            <div class="input-with-icon">
+              <div class="input-icon-wrapper">
+                <span class="material-icons">link</span>
+              </div>
+              <input type="url" id="edit-quicklink-url" name="url" required>
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="cancel-quicklink-button" data-i18n="cancelButton"></button>
+              <button type="submit" data-i18n="saveButton"></button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Edit Category Dialog -->
+      <div id="edit-category-dialog" class="modal">
+        <div class="modal-content">
+          <span class="close-category-button">&times;</span>
+          <h2 data-i18n="renameFolderTitle"></h2>
+          <form id="edit-category-form">
+            <label for="edit-category-name" data-i18n="nameLabel">名称</label>
+            <input type="text" id="edit-category-name" name="name" required>
+            <div class="form-buttons">
+              <button type="button" class="cancel-category-button" data-i18n="cancelButton">取消</button>
+              <button type="submit" data-i18n="saveButton">保存</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="bg-gray-50 text-center p-4 border-t border-gray-200 mt-4">
+        <!-- 新增的进度条容器 -->
+        <div id="year-progress" class="year-progress-container"></div>
+      </footer>
+      <div id="side-panel-content" class="side-panel-content">
+        <iframe id="side-panel-iframe" class="side-panel-iframe"></iframe>
+      </div>
+    </main>
+  </div>
+  <div id="more-button-toast" class="toast">
+    <p data-i18n="moreSearchSupportToast">更多搜索支持正在开发中...</p>
+  </div>
+
+  <script src="Sortable.min.js"></script>
+  <script src="qrcode.min.js"></script>
+  <script type="module" src="quick-links.js"></script>
+  <script src="progress.js"></script>
+  <div class="links-icons">
+    <a href="#history" id="history-link" data-i18n-title="historyLinkTitle">
+      <span class="material-icons">history</span>
+    </a>
+    <a href="#downloads" id="downloads-link" data-i18n-title="downloadsLinkTitle">
+      <span class="material-icons">download</span>
+    </a>
+    <a href="#passwords" id="passwords-link" data-i18n-title="passwordsLinkTitle">
+      <span class="material-icons">vpn_key</span>
+    </a>
+    <a href="#extensions" id="extensions-link" data-i18n-title="extensionsLinkTitle">
+      <span class="material-icons">extension</span>
+    </a>
+  </div>
+  <div class="settings-icon">
+    <a href="#settings" id="settings-link" data-i18n-title="settingsLinkTitle">
+      <span class="material-icons">settings</span>
+    </a>
+    <div class="settings-update-tip">
+      <div class="tip-content">
+        <span class="material-icons">info</span>
+        <div class="tip-text">
+          <p data-i18n="settingsUpdateTip">你可以在这里设置背景颜色、壁纸、悬浮球功能...</p>
+        </div>
+        <button class="tip-close">
+          <span class="material-icons">close</span>
+        </button>
+      </div>
+      <div class="tip-arrow"></div>
+    </div>
+  </div>
+  <!-- 在 body 标签结束前添加 -->
+  <div id="settings-sidebar" class="settings-sidebar">
+    <div class="settings-sidebar-content">
+      <div class="settings-sidebar-header">
+        <h2 class="settings-modal-title" data-i18n="settingsTitle">设置</h2>
+        <span class="settings-sidebar-close">&times;</span>
+      </div>
+      <div class="settings-layout">
+        <div class="settings-sidebar-nav">
+          <button class="settings-tab-button active" data-tab="general" data-i18n="generalTab">常规</button>
+          <button class="settings-tab-button" data-tab="appearance" data-i18n="appearanceTab">外观设置</button>
+          <button class="settings-tab-button" data-tab="layout" data-i18n="layoutTab">布局设置</button>
+          <button class="settings-tab-button" data-tab="search" data-i18n="searchTab">搜索设置</button>
+          <button class="settings-tab-button" data-tab="floating-ball" data-i18n="floatingBallTab">悬浮球设置</button>
+          <button class="settings-tab-button" data-tab="quick-links" data-i18n="quickLinksTab">网站推荐</button>
+          <button class="settings-tab-button" data-tab="link-opening" data-i18n="linkOpeningTab">链接打开方式</button>
+          <button class="settings-tab-button" data-tab="wheel-switching" data-i18n="wheelSwitchingTab">滚轮切换</button>
+          <button class="settings-tab-button" data-tab="shortcuts" data-i18n="shortcutsTab">快捷键</button>
+          <button class="settings-tab-button" data-tab="about" data-i18n="aboutTab">关于</button>
+        </div>
+        <div class="settings-content">
+          <div id="general-settings" class="settings-tab-content active">
+            <h3 class="settings-modal-subtitle" data-i18n="generalTab">常规</h3>
+            <h4 class="settings-section-title" data-i18n="languageSettingsTitle">语言设置</h4>
+            <div class="setting-option">
+              <select id="language-select" class="theme-select">
+                <option value="zh_CN">简体中文</option>
+                <option value="en">English</option>
+              </select>
+            </div>
+          </div>
+          <div id="appearance-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="backgroundTitle">背景设置</h3>
+
+            <h4 class="settings-section-title" data-i18n="themeTitle">主题设置</h4>
+            <div class="theme-setting-section">
+              <select id="theme-select" class="theme-select">
+                <option value="light" data-i18n="lightTheme">浅色</option>
+                <option value="dark" data-i18n="darkTheme">深色</option>
+                <option value="auto" data-i18n="autoTheme">跟随系统</option>
+              </select>
+            </div>
+
+            <h4 class="settings-section-title" data-i18n="solidBackgroundTitle">纯色背景</h4>
+            <div class="settings-background-options">
+              <div class="settings-bg-option gradient-background-1" data-bg="gradient-background-1"></div>
+              <div class="settings-bg-option gradient-background-2" data-bg="gradient-background-2"></div>
+              <div class="settings-bg-option gradient-background-3" data-bg="gradient-background-3"></div>
+              <div class="settings-bg-option gradient-background-4" data-bg="gradient-background-4"></div>
+              <div class="settings-bg-option gradient-background-5" data-bg="gradient-background-5"></div>
+              <div class="settings-bg-option gradient-background-6" data-bg="gradient-background-6"></div>
+              <div class="settings-bg-option gradient-background-7" data-bg="gradient-background-7"></div>
+            </div>
+
+            <h4 class="settings-section-title" data-i18n="wallpaperTitle">壁纸</h4>
+            <div class="wallpaper-section">
+              <div class="wallpaper-options">
+                <div class="wallpaper-option" data-wallpaper-url="../images/wallpapers/preset1.jpg"></div>
+                <div class="wallpaper-option" data-wallpaper-url="../images/wallpapers/preset2.jpg"></div>
+                <!-- 添加更多预设壁纸 -->
+              </div>
+              <div class="wallpaper-actions">
+                <button id="reset-wallpaper" class="reset-button">
+                  <span class="material-icons">refresh</span>
+                  <span data-i18n="resetWallpaper">恢复默认背景</span>
+                </button>
+                <label for="upload-wallpaper" class="upload-wallpaper-label">
+                  <span class="material-icons">upload</span>
+                  <span data-i18n="uploadWallpaper">上传壁纸</span>
+                </label>
+                <input type="file" id="upload-wallpaper" accept="image/*">
+              </div>
+            </div>
+          </div>
+          <div id="layout-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="layoutSettingsTitle">布局设置</h3>
+            <p data-i18n="layoutSettingsDescription" class="settings-description">自定义界面元素的显示方式。</p>
+
+            <h4 class="settings-section-title" data-i18n="bookmarkWidthTitle">书签宽度设置</h4>
+            <div id="floating-width-settings">
+              <div class="slider-container" style="display: flex; align-items: center; gap: 10px;">
+                <input type="range" id="width-slider" min="100" max="300" step="10" style="flex: 1;">
+                <div class="value-display" style="white-space: nowrap;">
+                  <span id="width-value">190</span>px
+                </div>
+              </div>
+              <div class="preview-text" style="margin-top: 16px;">
+                <span data-i18n="previewText">每行书签按钮数量：</span>
+                <span id="width-preview-count"></span>
+              </div>
+            </div>
+
+            <!-- 新增书签卡片高度设置 -->
+            <h4 class="settings-section-title" data-i18n="bookmarkHeightTitle">书签卡片高度</h4>
+            <div id="card-height-settings">
+              <div class="slider-container" style="display: flex; align-items: center; gap: 10px;">
+                <input type="range" id="height-slider" min="36" max="80" step="4" value="48" style="flex: 1;">
+                <div class="value-display" style="white-space: nowrap;">
+                  <span id="height-value">48</span>px
+                </div>
+              </div>
+              <div class="preview-text" style="margin-top: 16px;">
+                <span data-i18n="heightPreviewText">调整书签卡片的高度</span>
+              </div>
+            </div>
+
+            <!-- 新增界面元素显示设置 -->
+            <h4 class="settings-section-title" data-i18n="interfaceElementsTitle">界面元素显示</h4>
+            <div class="interface-elements-settings">
+              <div class="setting-option">
+                <label for="show-search-box" class="switch-label" data-i18n="showSearchBox">显示搜索框</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-search-box">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-welcome-message" class="switch-label" data-i18n="showWelcomeMessage">显示欢迎语</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-welcome-message">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-footer" class="switch-label" data-i18n="showFooter">显示页脚</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-footer">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-folder-icons" class="switch-label" data-i18n="showFolderIcons">显示目录树图标</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-folder-icons">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <h4 class="settings-section-title" data-i18n="quickAccessLinksTitle">快捷访问链接</h4>
+
+              <div class="setting-option">
+                <label for="show-history-link" class="switch-label" data-i18n="showHistoryLink">显示历史记录</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-history-link">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-downloads-link" class="switch-label" data-i18n="showDownloadsLink">显示下载记录</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-downloads-link">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-passwords-link" class="switch-label" data-i18n="showPasswordsLink">显示密码管理</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-passwords-link">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-extensions-link" class="switch-label" data-i18n="showExtensionsLink">显示扩展管理</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-extensions-link">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="search-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="searchSettingsTitle">搜索设置</h3>
+            <p data-i18n="searchSettingsDescription">自定义搜索建议的显示内容和行为</p>
+
+            <h4 class="settings-section-title" data-i18n="searchBoxDisplayTitle">搜索框显示</h4>
+            <div class="setting-option">
+              <label for="show-search-box" class="switch-label" data-i18n="showSearchBox">显示搜索框</label>
+              <label class="switch">
+                <input type="checkbox" id="show-search-box">
+                <span class="slider round"></span>
+              </label>
+            </div>
+
+            <h4 class="settings-section-title" data-i18n="searchSuggestionsTitle">搜索建议设置</h4>
+            <div class="search-suggestions-settings">
+              <div class="setting-option">
+                <label for="show-history-suggestions" class="switch-label"
+                  data-i18n="showHistorySuggestions">显示历史记录建议</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-history-suggestions">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+
+              <div class="setting-option">
+                <label for="show-bookmark-suggestions" class="switch-label"
+                  data-i18n="showBookmarkSuggestions">显示书签建议</label>
+                <label class="switch">
+                  <input type="checkbox" id="show-bookmark-suggestions">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            
+            <h4 class="settings-section-title" data-i18n="searchResultsOpeningTitle">搜索结果打开方式</h4>
+            <div class="search-opening-settings">
+              <div class="setting-option">
+                <label for="open-search-in-new-tab" class="switch-label" data-i18n="openSearchInNewTab">在新标签页中打开搜索结果</label>
+                <label class="switch">
+                  <input type="checkbox" id="open-search-in-new-tab" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="floating-ball-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="floatingBallSettingsTitle">悬浮球设置</h3>
+            <p data-i18n="floatingBallDescription">开启悬浮球后会在页面右上角显示一个可点击的悬浮图标，用于快速访问搜索引擎和书签。</p>
+            <div class="setting-option">
+              <label for="enable-floating-ball" class="switch-label" data-i18n="enableFloatingBall">启悬浮球</label>
+              <label class="switch">
+                <input type="checkbox" id="enable-floating-ball">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div id="quick-links-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="quickLinksSettings">Quick Links Settings</h3>
+            <p data-i18n="quickLinksDescription">开启快捷链接后，将在搜索框下方显示您最常访问的网站，方便快速访问。访问新的网站时会自动更新快捷链接列表。</p>
+            <div class="setting-option">
+              <label for="enable-quick-links" class="switch-label" data-i18n="enableQuickLinks">启用快捷链接</label>
+              <label class="switch">
+                <input type="checkbox" id="enable-quick-links">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <!-- 添加链接打开方式设置面板 -->
+          <div id="link-opening-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="linkOpeningSettingsTitle">链接打开方式</h3>
+            <p data-i18n="linkOpeningDescription">设置在主页面中点击书签和快捷链接时的打开方式。</p>
+            <div class="setting-option">
+              <label for="open-in-new-tab" class="switch-label" data-i18n="openInNewTab">在新标签页中打开</label>
+              <label class="switch">
+                <input type="checkbox" id="open-in-new-tab">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            
+            <!-- 添加侧边栏模式下的链接打开方式选项 -->
+            <h4 class="settings-section-title" data-i18n="sidePanelLinkOpeningTitle">侧边栏模式</h4>
+            <p data-i18n="sidePanelLinkOpeningDescription">设置在侧边栏模式下点击书签时的打开方式。</p>
+            <div class="setting-option">
+              <label for="sidepanel-open-in-new-tab" class="switch-label" data-i18n="sidePanelOpenInNewTab">在新标签页中打开</label>
+              <label class="switch">
+                <input type="checkbox" id="sidepanel-open-in-new-tab" checked>
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="setting-option">
+              <label for="sidepanel-open-in-sidepanel" class="switch-label" data-i18n="sidePanelOpenInSidepanel">在侧边栏内打开</label>
+              <label class="switch">
+                <input type="checkbox" id="sidepanel-open-in-sidepanel">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div id="wheel-switching-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="wheelSwitchingSettingsTitle">滚轮切换设置</h3>
+            <p data-i18n="wheelSwitchingDescription">配置默认文件夹的滚轮切换功能</p>
+            <div class="setting-option">
+              <label for="enable-wheel-switching" class="switch-label" data-i18n="enableWheelSwitching">启用滚轮切换</label>
+              <label class="switch">
+                <input type="checkbox" id="enable-wheel-switching">
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div id="shortcuts-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="shortcutsSettingsTitle">快捷键设置</h3>
+            <p data-i18n="shortcutsSettingsDescription" class="settings-description">自定义快捷键设置</p>
+            
+            <div class="shortcuts-settings-container">
+              <div class="shortcut-item" id="configure-shortcuts">
+                <div class="shortcut-info">
+                  <span class="shortcut-name" data-i18n="sidebarShortcutName">侧边栏快捷键</span>
+                  <div class="shortcut-value">
+                    <span class="shortcut-value-label" data-i18n="shortcutValue">默认</span>
+                    <span class="shortcut-value-text">Alt/Command + B</span>
+                  </div>
+                </div>
+                <span class="material-icons shortcut-arrow">chevron_right</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="about-settings" class="settings-tab-content">
+            <h3 class="settings-modal-subtitle" data-i18n="aboutTitle">关于 MarkHub</h3>
+            <div class="about-content">
+              <img src="../images/logo.svg" alt="MarkHub Logo" class="about-logo">
+              <p class="about-version"></p>
+              <p class="about-description" data-i18n="aboutDescription">
+                MarkHub 是一款综合书签管理扩展，帮你高效整理与直达常用网页，让收藏更有序、访问更省心。
+              </p>
+              <div class="about-links">
+                <a href="https://github.com/arch3rPro/MarkHub" target="_blank" class="about-link">
+                  <span class="material-icons">code</span>
+                  <span data-i18n="sourceCode">源代码</span>
+                </a>
+                <a href="mailto:support@booktap.cc" class="about-link" target="_blank">
+                  <span class="material-icons">feedback</span>
+                  <span data-i18n="feedback">反馈</span>
+                </a>
+                <p class="official-website">
+                  <a href="https://github.com/arch3rPro/MarkHub/issues" target="_blank">
+                    <span data-i18n="officialWebsite">Official Website</span>: https://www.markhub.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 添加遮罩层 -->
+  <div id="settings-overlay" class="settings-overlay"></div>
+  <button id="toggle-sidebar" class="bg-gray-300 p-1 rounded-r-md">
+    <span class="icon-svg"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M517.85-480 354.92-642.92q-8.3-8.31-8.5-20.89-.19-12.57 8.5-21.27 8.7-8.69 21.08-8.69 12.38 0 21.08 8.69l179.77 179.77q5.61 5.62 7.92 11.85 2.31 6.23 2.31 13.46t-2.31 13.46q-2.31 6.23-7.92 11.85L397.08-274.92q-8.31 8.3-20.89 8.5-12.57.19-21.27-8.5-8.69-8.69-8.69-21.08 0-12.38 8.69-21.08L517.85-480Z"/></svg></span>
+  </button>
+  <div id="confirm-dialog" class="modal">
+    <div class="modal-content">
+      <h2 id="confirm-dialog-title" data-i18n="confirmDeleteTitle">确认删除</h2>
+      <p id="confirm-dialog-message"></p>
+      <p id="confirm-delete-quick-link-message"></p> <!-- 新增的元素 -->
+      <div class="buttons">
+        <button id="cancel-delete-button" class="cancel-button" data-i18n="cancelButton">取消</button>
+        <button id="confirm-delete-button" class="delete-button" data-i18n="confirmDeleteButton">删除</button>
+      </div>
+    </div>
+  </div>
+  <div id="toast" class="toast" style="display: none;"></div>
+  <!-- 在合适的位置添加检查缓存按钮 -->
+  <div id="search-engines-dialog" class="modal">
+    <div class="modal-content">
+      <span class="close-button settings-modal-close">&times;</span>
+      <h2 data-i18n="searchEnginesTitle" class="search-engines-title">__MSG_searchEnginesTitle__</h2>
+      <div class="search-engines-container">
+        <!-- AI 搜索引擎 -->
+        <div class="search-engine-category">
+          <h3 class="category-title" data-i18n="aiSearchEnginesTitle">__MSG_aiSearchEnginesTitle__</h3>
+          <div class="search-engine-grid" id="ai-search-engines"></div>
+        </div>
+
+        <!-- 搜索引擎 -->
+        <div class="search-engine-category">
+          <h3 class="category-title" data-i18n="generalSearchEnginesTitle">__MSG_generalSearchEnginesTitle__</h3>
+          <div class="search-engine-grid" id="search-engines"></div>
+        </div>
+
+        <!-- 社交媒体 -->
+        <div class="search-engine-category">
+          <h3 class="category-title" data-i18n="socialSearchEnginesTitle">__MSG_socialSearchEnginesTitle__</h3>
+          <div class="search-engine-grid" id="social-media-engines"></div>
+        </div>
+
+        <!-- 自定义搜索引擎 -->
+        <div class="search-engine-category">
+          <h3 class="category-title" data-i18n="customSearchEnginesTitle">__MSG_customSearchEnginesTitle__</h3>
+          <div class="custom-engine-container">
+            <div class="custom-engine-grid" id="custom-engines"></div>
+
+            <div class="custom-engine-form">
+              <div class="input-container">
+                <input type="text" id="custom-engine-name" data-i18n-placeholder="searchEngineNamePlaceholder"
+                  class="custom-input">
+              </div>
+              <div class="input-container">
+                <input type="text" id="custom-engine-url" data-i18n-placeholder="searchEngineUrlPlaceholder"
+                  class="custom-input">
+              </div>
+              <div class="input-container">
+                <input type="text" id="custom-engine-icon" data-i18n-placeholder="searchEngineIconPlaceholder"
+                  class="custom-input">
+              </div>
+              <button id="add-custom-engine" class="custom-button"
+                data-i18n="addSearchEngineButton">__MSG_addSearchEngineButton__</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 添加全局滚动条 -->
+  <div class="global-range-slider">
+    <h4 class="settings-section-title" style="display: none;">书签宽度设置</h4>
+    <div id="floating-width-settings-global">
+      <div class="slider-container" style="display: flex; align-items: center; gap: 10px;">
+        <input type="range" id="global-width-slider" min="100" max="300" step="10" style="flex: 1;">
+        <div class="value-display" style="white-space: nowrap;">
+          <span id="global-width-value">190</span>px
+        </div>
+      </div>
+      <div class="preview-text" style="margin-top: 16px;">
+        <span data-i18n="previewText">每行书签按钮数量：</span>
+        <span id="global-width-preview-count"></span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
